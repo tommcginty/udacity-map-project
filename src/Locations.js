@@ -1,4 +1,4 @@
-export const allLocations = [{
+export const allLocations = [
 	{
 		location: {
 			lat: 39.405312,
@@ -46,8 +46,6 @@ export const allLocations = [{
 		},
 		title: 'Vinyl Brewing',
 		address: '300 12th St, Hammonton, NJ 08037'
-	},
+	}
 
-}]
-
-https://maps.googleapis.com/maps/api/geocode/json?address=6754+Washington+Ave+B,Egg+Harbor+Township,NJ+08234&keyAIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY
+]
