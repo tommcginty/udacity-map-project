@@ -1,3 +1,36 @@
-#map {
-  height: 100vh;
+
+* {
+    box-sizing: border-box;
 }
+#container {
+
+}
+.navTop {
+  background: yellow;
+  top: 0;
+  left: 0;
+  height: 5vh;
+  width: 100vw;
+  z-index: 999;
+}
+
+.main {
+}
+
+.sidebar {
+  float: right;
+  background-color: brown;
+  width: 180px;
+  height: 90vh;
+  overflow: scroll;
+}
+
+#map {
+  height: 90vh;
+  width: auto;
+}
+
+
+
+
+

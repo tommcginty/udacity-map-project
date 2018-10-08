@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
-import { allLocations } from './Locations.js';
-//import Sidebar from './components/Sidebar.js';  
-
+import * as BreweryAPI from './api/BreweryAPI.js';
+import Navigation from './components/Navigation.js';
+import Sidebar from './components/Sidebar.js';  
+import { buildInfoContent } from './util/helpers.js'
 
 
 class neighborhoodMap extends Component {
 
   state = {
-    breweries: []
+    breweries: [],
+    markers: []
   }
 
   renderMap = () => {
@@ -20,30 +22,44 @@ class neighborhoodMap extends Component {
   initMap = () => {
     const map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.514327, lng: -74.663288},
-      zoom: 10
+      zoom: 9
     })
     this.state.breweries.map(brewery => {
-      console.log(brewery.location.lat)
       let marker = new window.google.maps.Marker({
-      position: {lat: brewery.location.lat, lng: brewery.location.lng},
-      map: map,
-      title: 'First Marker!'
+        position: {lat: brewery.location.lat, lng: brewery.location.lng},
+        map: map,
+        title: brewery.name,
+        animation: window.google.maps.Animation.DROP,
       })
+      console.log(brewery.name, brewery.location.address)
+      let infowindow =  new window.google.maps.InfoWindow({
+        content: brewery.categories[0].shortName
+      })
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
     })
 
   }
 
   componentDidMount() {
-    this.setState({
-      breweries: allLocations
-    }, this.renderMap())
+    BreweryAPI.getAll()
+    .then(response => {
+      this.setState({ breweries: response }, this.renderMap());
+    });
   }
 
   render() {
     return (
-      <main>
-        <div id="map"></div>
-      </main>
+      <div id='container'>
+        <header>
+          <Navigation />
+        </header>
+        <main className='main'>
+          <Sidebar />
+          <div id="map"></div>
+        </main>
+      </div>
     )
   }
 }
