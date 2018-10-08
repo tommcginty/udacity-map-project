@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-class Navigation extends Component {
+class Header extends Component {
 
 	render () {
 		return (
-			<nav className='navTop'>
+			<header>
 			<h1>South Jersey Brewery Finder</h1>
-			</nav>
+			</header>
 			)
 	}
 
 }
 
-export default Navigation;
+export default Header;

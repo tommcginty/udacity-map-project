@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import * as BreweryAPI from './api/BreweryAPI.js';
-import Navigation from './components/Navigation.js';
-import Sidebar from './components/Sidebar.js';  
+import Header from './components/Header.js';
+import BeerList from './components/BeerList.js';  
 import { buildInfoContent } from './util/helpers.js'
 
 
@@ -22,7 +22,9 @@ class neighborhoodMap extends Component {
   initMap = () => {
     const map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.514327, lng: -74.663288},
-      zoom: 9
+      zoom: 9,
+      mapTypeControl: false,
+      fullscreenControl: false
     })
     this.state.breweries.map(brewery => {
       let marker = new window.google.maps.Marker({
@@ -51,14 +53,14 @@ class neighborhoodMap extends Component {
 
   render() {
     return (
-      <div id='container'>
-        <header>
-          <Navigation />
-        </header>
-        <main className='main'>
-          <Sidebar />
-          <div id="map"></div>
-        </main>
+      <div>
+        <Header />
+        <div className='container'>
+        <BeerList breweries={this.state.breweries}/>
+        <div className='map-container'>
+          <div id='map'></div>
+        </div>
+        </div>
       </div>
     )
   }

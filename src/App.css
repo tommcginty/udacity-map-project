@@ -1,36 +1,36 @@
 
-* {
-    box-sizing: border-box;
+header {
+  position: absolute;
+  background-color: Yellow;
+  width: 100%;
+  height: 56px;
 }
-#container {
-
-}
-.navTop {
-  background: yellow;
-  top: 0;
-  left: 0;
-  height: 5vh;
+.container {
+  display: flex;
+  height: 100vh;
   width: 100vw;
-  z-index: 999;
+  background-color: gray;
 }
-
-.main {
-}
-
-.sidebar {
-  float: right;
+.beer-list-container {
+  display: block;
+  margin-top: 56px;
   background-color: brown;
-  width: 180px;
-  height: 90vh;
+  width: 300px;
+  overflow: hidden;
+  padding-bottom: 56px;
+}
+.beer-list {
+  background-color: green;
   overflow: scroll;
+  height: 100%;
 }
-
+.map-container {
+  padding-top: 56px;
+  background-color: cyan;
+  width: 100%;
+  height: calc(1000% -56px);
+}
 #map {
-  height: 90vh;
-  width: auto;
+  height: 100%;
+  width: 100%;
 }
-
-
-
-
-
