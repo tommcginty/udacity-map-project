@@ -11,8 +11,7 @@ class BeerList extends Component {
 		addMarkers: PropTypes.func.isRequired,
 		markers: PropTypes.array.isRequired,
 		hideMarkers: PropTypes.func.isRequired,
-
-		// mapNJ: PropTypes.object.isRequired
+		mapNJ: PropTypes.object.isRequired
 	}
 state = {
 	query: '',
@@ -54,7 +53,7 @@ componentDidUpdate() {
 						value={query}
 						onChange={event => {
 							this.updateQuery(event.target.value)
-							props.hideMarkers(markers)
+							hideMarkers(markers)
 
 						}}
 					/>

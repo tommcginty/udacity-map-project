@@ -4,7 +4,6 @@ import * as BreweryAPI from './api/BreweryAPI.js';
 import Header from './components/Header.js';
 import BeerList from './components/BeerList.js';  
 
-
 class neighborhoodMap extends Component {
 
   state = {
@@ -17,7 +16,7 @@ class neighborhoodMap extends Component {
     window.initMap = this.initMap
   }
   initMap = () => {
-    const map = new window.google.maps.Map(document.getElementById('map'), {
+    let map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.514327, lng: -74.663288},
       zoom: 9,
       mapTypeControl: false,
@@ -47,15 +46,17 @@ class neighborhoodMap extends Component {
       });
       markerArray.push(marker);
     })
-    console.log(markerArray)
     this.setState({ markers: markerArray})
   }
-  
+
 hideMarkers = (markersArray) => {
+  let map = this.state.mapNJ
   for (let i = 0; i < markersArray.length; i++) {
-    markersArray[i].visible = false;
+    markersArray[i].setVisible(false);
   }
+  console.log(window.google.maps)
   this.setState({ markers: markersArray })
+  this.setState({ mapNJ: map })
 }
 
 
@@ -67,7 +68,6 @@ hideMarkers = (markersArray) => {
   }
 
   componentDidUpdate() {
-  console.log(typeof(this.state.markers))
 }
 
   render() {
@@ -75,7 +75,11 @@ hideMarkers = (markersArray) => {
       <div>
         <div className='container'>
           <Header />
-          <BeerList breweries={this.state.breweries} markers={this.state.markers}/>
+          <BeerList 
+            breweries={this.state.breweries} 
+            markers={this.state.markers}
+            hideMarkers={this.hideMarkers}
+          />
           <div className='map-container'>
             <div id='map'></div>
           </div>
