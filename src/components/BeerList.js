@@ -8,7 +8,7 @@ import sortBy from 'sort-by'
 class BeerList extends Component {
 	static propTypes = {
 		breweries: PropTypes.array.isRequired,
-		addMarkers: PropTypes.func.isRequired,
+		makeMarkers: PropTypes.func.isRequired,
 		markers: PropTypes.array.isRequired,
 		hideMarkers: PropTypes.func.isRequired,
 		mapNJ: PropTypes.object.isRequired
@@ -26,12 +26,11 @@ clearQuery = () => {
 }
 
 
-
 componentDidUpdate() {
 
 };
 	render () {
-		const { breweries, mapNJ, markers, hideMarkers } = this.props
+		const { breweries, mapNJ, markers, hideMarkers, showMarkers} = this.props
 		const { query } = this.state
 		let filteredList
 		if (this.state.query) {
@@ -54,7 +53,6 @@ componentDidUpdate() {
 						onChange={event => {
 							this.updateQuery(event.target.value)
 							hideMarkers(markers)
-
 						}}
 					/>
 				</div>
@@ -68,6 +66,8 @@ componentDidUpdate() {
 						</li>
 					))}
 				</ul>
+								{showMarkers(filteredList)}
+
 			</div>
 
 			)

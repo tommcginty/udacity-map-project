@@ -54,9 +54,16 @@ hideMarkers = (markersArray) => {
   for (let i = 0; i < markersArray.length; i++) {
     markersArray[i].setVisible(false);
   }
-  console.log(window.google.maps)
-  this.setState({ markers: markersArray })
-  this.setState({ mapNJ: map })
+}
+
+showMarkers = (filteredList) => {
+  if (this.state.markers.length > 0) {
+    for (let i = 0; i < filteredList.length; i++) {
+      for (let j = 0; j < this.state.markers.length; j++)
+        if (this.state.markers.title === filteredList.name)
+          this.state.markers[i].setVisible(true)
+    }
+  }
 }
 
 
@@ -79,11 +86,13 @@ hideMarkers = (markersArray) => {
             breweries={this.state.breweries} 
             markers={this.state.markers}
             hideMarkers={this.hideMarkers}
+            showMarkers={this.showMarkers}
           />
           <div className='map-container'>
             <div id='map'></div>
           </div>
         </div>
+
       </div>
     )
   }
