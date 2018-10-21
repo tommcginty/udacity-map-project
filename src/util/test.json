@@ -1,0 +1,3251 @@
+{
+"meta": {
+"code": 200
+"requestId": "5bc6a54f6a6071462de5bcee"
+}
+"notifications": [
+{
+"type": "notificationTray"
+"item": {
+"unreadCount": 0
+}
+}
+]
+"response": {
+"venue": {
+"id": "59512c98da5e5603d2accc5a"
+"name": "Bucket Brigade Brewery"
+"contact": {
+}
+"location": {
+"address": "205 N Main St"
+"lat": 39.0861646
+"lng": -74.82058760000001
+"labeledLatLngs": [
+{
+"label": "display"
+"lat": 39.0861646
+"lng": -74.82058760000001
+}
+]
+"postalCode": "08210"
+"cc": "US"
+"city": "Cape May Court House"
+"state": "NJ"
+"country": "United States"
+"formattedAddress": [
+"205 N Main St"
+"Cape May Court House, NJ 08210"
+]
+}
+"canonicalUrl": "https://foursquare.com/v/bucket-brigade-brewery/59512c98da5e5603d2accc5a"
+"categories": [
+{
+"id": "50327c8591d4c4b30a586d5d"
+"name": "Brewery"
+"pluralName": "Breweries"
+"shortName": "Brewery"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/food/brewery_"
+"suffix": ".png"
+}
+"primary": true
+}
+]
+"verified": true
+"stats": {
+"tipCount": 0
+"usersCount": 139
+"checkinsCount": 89
+"visitsCount": 171
+}
+"price": {
+"tier": 2
+"message": "Moderate"
+"currency": "$"
+}
+"likes": {
+"count": 4
+"groups": [
+{
+"type": "others"
+"count": 4
+"items": [
+"0": {
+"id": "1837341"
+"firstName": "Mary Ann"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/1837341-RYJXEDQ21B0UHVNA.jpg"
+}
+}
+"1": {
+"id": "164893637"
+"firstName": "Adam"
+"lastName": "Mazzola"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/164893637-VAHO5MBNDSM34GFA.jpg"
+}
+}
+"2": {
+"id": "13770718"
+"firstName": "Diane"
+"lastName": "Smith"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/SEKCSB5ZTHLBWMPE.jpg"
+}
+}
+]
+}
+]
+"summary": ", Mary Ann, Adam Mazzola & Diane Smith"
+}
+"like": false
+"dislike": false
+"ok": false
+"allowMenuUrlEdit": true
+"beenHere": {
+"count": 0
+"unconfirmedCount": 0
+"marked": false
+"lastCheckinExpiredAt": 0
+}
+"specials": {
+"count": 0
+"items": [
+]
+}
+"photos": {
+"count": 24
+"groups": [
+{
+"type": "checkin"
+"name": "Friends' check-in photos"
+"count": 0
+"items": [
+]
+}
+{
+"type": "venue"
+"name": "Venue photos"
+"count": 24
+"items": [
+"0": {
+"id": "5bafdde8e55d8b0039881e2a"
+"createdAt": 1538252264
+"source": {
+"name": "Swarm for iOS"
+"url": "https://www.swarmapp.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/142323_W-h1fYLmbs3Xoe8MT-Tmi-a21Pa5oSgbsnqUDuVA2o4.jpg"
+"width": 1920
+"height": 1440
+"user": {
+"id": "142323"
+"firstName": "Keith"
+"lastName": "Tomaselli"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/EFMCDG02YTDROBG5.jpg"
+}
+}
+"visibility": "public"
+}
+"1": {
+"id": "5b899999464d65002c60f6bb"
+"createdAt": 1535744409
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/49939871_E6XK2m7_yL1-su3eOSYST1Bb-AZvbn36B8IjowNxWbg.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "49939871"
+"firstName": "Steve"
+"lastName": "Kitzinger"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/IONTLGQ4R4UPHWTT.jpg"
+}
+}
+"visibility": "public"
+}
+"2": {
+"id": "5b8998700ff4f90039ab88a0"
+"createdAt": 1535744112
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/47509_GzoENdGXOl5-v_bG6X-R8TIcMZfY2qrpzj97eAV8qnQ.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "47509"
+"firstName": "Tom"
+"lastName": "Sauer"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/47509_1260021866314.jpg"
+}
+}
+"visibility": "public"
+}
+"3": {
+"id": "5b898fb71fa763002c837335"
+"createdAt": 1535741879
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/49939871_eOfvYBUyhmJoCBw5yqq4Tmi6akPZPn3VEClFciUxDlk.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "49939871"
+"firstName": "Steve"
+"lastName": "Kitzinger"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/IONTLGQ4R4UPHWTT.jpg"
+}
+}
+"visibility": "public"
+}
+"4": {
+"id": "5b676cbd6f0aa2002cf71908"
+"createdAt": 1533504701
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/15629742_PSHiWzS_XTR_wxKzpmNpTzk8pryUfDax51SPV8N1Leg.jpg"
+"width": 1398
+"height": 1333
+"user": {
+"id": "15629742"
+"firstName": "Angelica"
+"lastName": "Degenaars"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/ZCQLMZXZP3MUAQTC.jpg"
+}
+}
+"visibility": "public"
+}
+"5": {
+"id": "5b63b52b0a08ab002cb78053"
+"createdAt": 1533261099
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/427341950_CrC48E2sQlmIPtOU9j6oFwv9p69cgcwI7XRBPRU-2Cw.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "427341950"
+"firstName": "Alain"
+"lastName": "Trudel"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/427341950_Iyxjtsm2_XrU7FdU4J6vZn0jktbNk0r8eaiI1VAgAm2DKaay_W3mLp1u1fNSSoaQ_X87dz7Q1.jpg"
+}
+}
+"visibility": "public"
+}
+]
+}
+]
+"summary": "0 photos"
+}
+"reasons": {
+"count": 0
+"items": [
+]
+}
+"hereNow": {
+"count": 0
+"summary": "Nobody here"
+"groups": [
+]
+}
+"createdAt": 1498492056
+"tips": {
+"count": 0
+"groups": [
+{
+"type": "following"
+"name": "Tips from people you follow"
+"count": 0
+"items": [
+]
+}
+]
+}
+"shortUrl": "http://4sq.com/2tbpXTk"
+"timeZone": "America/New_York"
+"listed": {
+"count": 2
+"groups": [
+{
+"type": "others"
+"name": "Lists from other people"
+"count": 2
+"items": [
+"0": {
+"id": "5b4e94f3535d6f002cd50a41"
+"name": "All Of The Breweries!"
+"description": "...in NJ"
+"type": "others"
+"user": {
+"id": "40864489"
+"firstName": "Morgan"
+"lastName": "J"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/3NTJ4GU0W1W4RIL4.jpg"
+}
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/artsandcrash/list/all-of-the-breweries"
+"canonicalUrl": "https://foursquare.com/artsandcrash/list/all-of-the-breweries"
+"createdAt": 1531876595
+"updatedAt": 1531941043
+"followers": {
+"count": 0
+}
+"listItems": {
+"count": 97
+"items": [
+"0": {
+"id": "v59512c98da5e5603d2accc5a"
+"createdAt": 1531877419
+}
+]
+}
+}
+"1": {
+"id": "5a6fe0ff666116737e4fc92c"
+"name": "New Jersey Breweries"
+"description": ""
+"type": "others"
+"user": {
+"id": "1667838"
+"firstName": "Ricky"
+"lastName": "Carlo"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/1667838-MGC0XADVVGYEKHVK.jpg"
+}
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/user/1667838/list/new-jersey-breweries"
+"canonicalUrl": "https://foursquare.com/user/1667838/list/new-jersey-breweries"
+"createdAt": 1517281535
+"updatedAt": 1517283427
+"followers": {
+"count": 0
+}
+"listItems": {
+"count": 80
+"items": [
+"0": {
+"id": "v59512c98da5e5603d2accc5a"
+"createdAt": 1517282838
+}
+]
+}
+}
+]
+}
+]
+}
+"pageUpdates": {
+"count": 0
+"items": [
+]
+}
+"inbox": {
+"count": 0
+"items": [
+]
+}
+"venueChains": [
+]
+"attributes": {
+"groups": [
+{
+"type": "price"
+"name": "Price"
+"summary": "$$"
+"count": 1
+"items": [
+"0": {
+"displayName": "Price"
+"displayValue": "$$"
+"priceTier": 2
+}
+]
+}
+]
+}
+"bestPhoto": {
+"id": "5bafdde8e55d8b0039881e2a"
+"createdAt": 1538252264
+"source": {
+"name": "Swarm for iOS"
+"url": "https://www.swarmapp.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/142323_W-h1fYLmbs3Xoe8MT-Tmi-a21Pa5oSgbsnqUDuVA2o4.jpg"
+"width": 1920
+"height": 1440
+"visibility": "public"
+}
+}
+}
+}
+
+
+/*
+**
+**/
+
+
+{
+"meta": {
+"code": 200
+"requestId": "5bc6a6cd4434b9406d7a913c"
+}
+"notifications": [
+{
+"type": "notificationTray"
+"item": {
+"unreadCount": 0
+}
+}
+]
+"response": {
+"venue": {
+"id": "5ad508c5840fc2342f226920"
+"name": "Mud Hen Brewing Company"
+"contact": {
+"phone": "6098467918"
+"formattedPhone": "(609) 846-7918"
+"twitter": "mudhenbrew"
+"instagram": "mudhenbrew"
+"facebook": "1696549160574769"
+"facebookUsername": "MudhenBrew"
+"facebookName": "Mudhen Brewing Company"
+}
+"location": {
+"address": "127 W Rio Grande Ave"
+"lat": 38.98440131021552
+"lng": -74.82497114325366
+"labeledLatLngs": [
+{
+"label": "display"
+"lat": 38.98440131021552
+"lng": -74.82497114325366
+}
+]
+"postalCode": "08260"
+"cc": "US"
+"city": "Wildwood"
+"state": "NJ"
+"country": "United States"
+"formattedAddress": [
+"127 W Rio Grande Ave"
+"Wildwood, NJ 08260"
+]
+}
+"canonicalUrl": "https://foursquare.com/v/mud-hen-brewing-company/5ad508c5840fc2342f226920"
+"categories": [
+{
+"id": "50327c8591d4c4b30a586d5d"
+"name": "Brewery"
+"pluralName": "Breweries"
+"shortName": "Brewery"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/food/brewery_"
+"suffix": ".png"
+}
+"primary": true
+}
+{
+"id": "4bf58dd8d48988d155941735"
+"name": "Gastropub"
+"pluralName": "Gastropubs"
+"shortName": "Gastropub"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/food/gastropub_"
+"suffix": ".png"
+}
+}
+]
+"verified": false
+"stats": {
+"tipCount": 6
+"usersCount": 564
+"checkinsCount": 463
+"visitsCount": 948
+}
+"url": "http://www.mudhenbrew.com"
+"price": {
+"tier": 2
+"message": "Moderate"
+"currency": "$"
+}
+"likes": {
+"count": 18
+"groups": [
+{
+"type": "others"
+"count": 18
+"items": [
+]
+}
+]
+"summary": "18 Likes"
+}
+"like": false
+"dislike": false
+"ok": false
+"rating": 8.1
+"ratingColor": "73CF42"
+"ratingSignals": 24
+"allowMenuUrlEdit": true
+"beenHere": {
+"count": 0
+"unconfirmedCount": 0
+"marked": false
+"lastCheckinExpiredAt": 0
+}
+"specials": {
+"count": 0
+"items": [
+]
+}
+"photos": {
+"count": 65
+"groups": [
+{
+"type": "checkin"
+"name": "Friends' check-in photos"
+"count": 0
+"items": [
+]
+}
+{
+"type": "venue"
+"name": "Venue photos"
+"count": 65
+"items": [
+"0": {
+"id": "5bbce15435811b002c03d05b"
+"createdAt": 1539105108
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/18188522_4L_ZiTMRfWUQqmceJA8vl7HPCY6GyaWAeTz7BMg5cck.jpg"
+"width": 2048
+"height": 1536
+"user": {
+"id": "18188522"
+"firstName": "Ron"
+"lastName": "Fry"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/CNGNUSWH5GVPDZLX.jpg"
+}
+}
+"visibility": "public"
+}
+"1": {
+"id": "5bb15393f05ca8002d02f203"
+"createdAt": 1538347923
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/100226702_FNGLGwW9SLm6r1K4zyhuIjYoLTON3KRljG-N6NTsUX0.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "100226702"
+"firstName": "Brandon"
+"lastName": "Huff"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/blank_boy.png"
+"default": true
+}
+}
+"visibility": "public"
+}
+"2": {
+"id": "5bb14d452be425002c4aa001"
+"createdAt": 1538346309
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/70988906_CYh43x4WRFAjCZb-xYCizkYuwnuUlzu5kHX3sO2uduM.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "70988906"
+"firstName": "Johnny"
+"lastName": "Clark"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/ORAUUA4XRE2B23WJ.jpg"
+}
+}
+"visibility": "public"
+}
+"3": {
+"id": "5bb146c431ac6c002c682a22"
+"createdAt": 1538344644
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/70988906_-TBR6-T8L65V30HLqPpPOD9rBwuQFyvJnLLAvjNU1yI.jpg"
+"width": 1066
+"height": 2000
+"user": {
+"id": "70988906"
+"firstName": "Johnny"
+"lastName": "Clark"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/ORAUUA4XRE2B23WJ.jpg"
+}
+}
+"visibility": "public"
+}
+"4": {
+"id": "5bb13d89178a2a002c78473c"
+"createdAt": 1538342281
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/100226702_2KZApq29X0Rn_LYKOmFpaARQOo9hKz9zn35Gc3IBEZs.jpg"
+"width": 1500
+"height": 2000
+"user": {
+"id": "100226702"
+"firstName": "Brandon"
+"lastName": "Huff"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/blank_boy.png"
+"default": true
+}
+}
+"visibility": "public"
+}
+"5": {
+"id": "5b9704a365211f002ce8b59c"
+"createdAt": 1536623779
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/7835045_k9jKyUXhSF-UPlajqaVF6XSXSwQowo9Ss2AFyE1nN_Q.jpg"
+"width": 1920
+"height": 1440
+"user": {
+"id": "7835045"
+"firstName": "Paige"
+"lastName": "C"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/7835045_vzeT9M7E_W9mOqaLB2Kjg0RdSk9ZaZ3qumWd83vX699ukd2xQKig6s29t8WuzPpeBW54z34H4.jpg"
+}
+}
+"visibility": "public"
+}
+]
+}
+]
+"summary": "0 photos"
+}
+"reasons": {
+"count": 0
+"items": [
+]
+}
+"hereNow": {
+"count": 0
+"summary": "Nobody here"
+"groups": [
+]
+}
+"createdAt": 1523910853
+"tips": {
+"count": 6
+"groups": [
+{
+"type": "following"
+"name": "Tips from people you follow"
+"count": 0
+"items": [
+]
+}
+{
+"type": "others"
+"name": "All tips"
+"count": 6
+"items": [
+"0": {
+"id": "5b9704a1d3cce8002cc0b89f"
+"createdAt": 1536623777
+"text": "Really enjoyed this spot! Very dog friendly, a nice fire pit outside, plus outdoor live music. Food was really goo too. Try their beers or cider!"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b9704a1d3cce8002cc0b89f"
+"photo": {
+"id": "5b9704a365211f002ce8b59c"
+"createdAt": 1536623779
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/7835045_k9jKyUXhSF-UPlajqaVF6XSXSwQowo9Ss2AFyE1nN_Q.jpg"
+"width": 1920
+"height": 1440
+"visibility": "public"
+}
+"photourl": "https://igx.4sqi.net/img/general/original/7835045_k9jKyUXhSF-UPlajqaVF6XSXSwQowo9Ss2AFyE1nN_Q.jpg"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 2
+"disagreeCount": 0
+"lastVoteText": "Upvoted 6 days ago"
+"lastUpvoteTimestamp": 1539217493
+"todo": {
+"count": 0
+}
+"user": {
+"id": "7835045"
+"firstName": "Paige"
+"lastName": "C"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/7835045_vzeT9M7E_W9mOqaLB2Kjg0RdSk9ZaZ3qumWd83vX699ukd2xQKig6s29t8WuzPpeBW54z34H4.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"1": {
+"id": "5b8017cbc66666002cd97672"
+"createdAt": 1535121355
+"text": "Great beer, great service"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b8017cbc66666002cd97672"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "207900"
+"firstName": "Abhay"
+"lastName": "Shah"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/OHIBIX0M4UGWG4FA.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"2": {
+"id": "5b636ba1a9e402002cf12a7e"
+"createdAt": 1533242273
+"text": "Great Mac and cheese"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b636ba1a9e402002cf12a7e"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "69438714"
+"firstName": "Jenn"
+"lastName": "N"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/K2ANWPIORZBWP4XQ.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"3": {
+"id": "5b39934c7d849700380ee600"
+"createdAt": 1530499916
+"text": "Indoor/outdoor seating. Dueling pianos on Saturday Night."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b39934c7d849700380ee600"
+"photo": {
+"id": "5b36e38d666116002ce39de5"
+"createdAt": 1530323853
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/2429625_e4dOjAPloUATW-Rk-xKL_bN4tZiGnrP1GMSUR4GwAoM.jpg"
+"width": 1500
+"height": 2000
+"visibility": "public"
+}
+"photourl": "https://igx.4sqi.net/img/general/original/2429625_e4dOjAPloUATW-Rk-xKL_bN4tZiGnrP1GMSUR4GwAoM.jpg"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 3
+"disagreeCount": 0
+"lastVoteText": "Upvoted 1 week ago"
+"lastUpvoteTimestamp": 1538867245
+"todo": {
+"count": 0
+}
+"user": {
+"id": "2429625"
+"firstName": "Ryan"
+"lastName": "Gallagher"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/2429625_c7Umsxqh_OdS0SpLX4MFm8eh1yPP1N-NEqdElkO2Iw01VQMrtKMeuj8v3NefW78Yvj7ra6lJw.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"4": {
+"id": "5b1ae136838e59002cc3832d"
+"createdAt": 1528488246
+"text": "Service and the selection of beers was great."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b1ae136838e59002cc3832d"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 1
+"disagreeCount": 0
+"lastVoteText": "Upvoted Aug 19"
+"lastUpvoteTimestamp": 1534709647
+"todo": {
+"count": 0
+}
+"user": {
+"id": "41687894"
+"firstName": "Mike"
+"lastName": "A."
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/M1FZNM2EGXWCYRC1.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"5": {
+"id": "5aec7280598e64002c8066dc"
+"createdAt": 1525445248
+"text": "Check out the fire pit and cornhole outside after grabbing a beer. Looking forward to the live entertainment Friday and Saturday nights!"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5aec7280598e64002c8066dc"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 1
+}
+"user": {
+"id": "3302110"
+"firstName": "Vince"
+"lastName": "C."
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/3302110-JEFVSHQSKGV4MJUM.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+]
+}
+]
+}
+"shortUrl": "https://4sq.com/2Hr83Uu"
+"timeZone": "America/New_York"
+"listed": {
+"count": 9
+"groups": [
+{
+"type": "others"
+"name": "Lists from other people"
+"count": 9
+"items": [
+"0": {
+"id": "4ef6c42ff9ab2e668183abc0"
+"name": "Wildwood/South Jersey"
+"description": "Best food & drink spots in Wildwood and the surrounding counties, in no particular order."
+"type": "others"
+"user": {
+"id": "7649493"
+"firstName": "E"
+"lastName": "W"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JSZQDFVPY1KW5CWK.jpg"
+}
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/user/7649493/list/wildwoodsouth-jersey"
+"canonicalUrl": "https://foursquare.com/user/7649493/list/wildwoodsouth-jersey"
+"createdAt": 1324794927
+"updatedAt": 1534203875
+"photo": {
+"id": "4ef6d06d29c2683188ffc33d"
+"createdAt": 1324798061
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/441HT0RDYHSN1H4L4H1YDQ0JVMP2EOVONP3DGNGDMJ3ADEZ5.jpg"
+"width": 640
+"height": 480
+"user": {
+"id": "7649493"
+"firstName": "E"
+"lastName": "W"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JSZQDFVPY1KW5CWK.jpg"
+}
+}
+"visibility": "public"
+}
+"followers": {
+"count": 10
+}
+"listItems": {
+"count": 24
+"items": [
+"0": {
+"id": "v5ad508c5840fc2342f226920"
+"createdAt": 1534203875
+}
+]
+}
+}
+"1": {
+"id": "5b1fcf5456c89f3a5a0c612d"
+"name": "Booze"
+"description": ""
+"type": "others"
+"user": {
+"id": "452703425"
+"firstName": "Sharon"
+"lastName": "Minelli"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/452703425_cT7UpWaZ_IyUXnp8sZnWAFfbk9DYYXQ8vfbOuPVL1dkE2o7B6fRTOqv6Fg42AjJwu9IpTKzgO.jpg"
+}
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/user/452703425/list/booze"
+"canonicalUrl": "https://foursquare.com/user/452703425/list/booze"
+"createdAt": 1528811348
+"updatedAt": 1528837461
+"followers": {
+"count": 0
+}
+"listItems": {
+"count": 15
+"items": [
+"0": {
+"id": "v5ad508c5840fc2342f226920"
+"createdAt": 1528837408
+}
+]
+}
+}
+]
+}
+]
+}
+"phrases": [
+{
+"phrase": "fire pit"
+"sample": {
+"entities": [
+"0": {
+"indices": [
+"0": 14
+"1": 22
+]
+"type": "keyPhrase"
+}
+]
+"text": "Check out the fire pit and cornhole outside after grabbing a beer...."
+}
+"count": 2
+}
+{
+"phrase": "saturday night"
+"sample": {
+"entities": [
+"0": {
+"indices": [
+"0": 23
+"1": 37
+]
+"type": "keyPhrase"
+}
+]
+"text": "... Dueling pianos on Saturday Night."
+}
+"count": 2
+}
+]
+"hours": {
+"status": "Open until 2:00 AM"
+"richStatus": {
+"entities": [
+]
+"text": "Open until 2:00 AM"
+}
+"isOpen": true
+"isLocalHoliday": false
+"dayData": [
+]
+"timeframes": [
+{
+"days": "Mon–Sun"
+"includesToday": true
+"open": [
+"0": {
+"renderedTime": "11:00 AM–2:00 AM"
+}
+]
+"segments": [
+]
+}
+]
+}
+"popular": {
+"isOpen": false
+"isLocalHoliday": false
+"timeframes": [
+{
+"days": "Today"
+"includesToday": true
+"open": [
+"0": {
+"renderedTime": "3:00 PM–8:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Wed"
+"open": [
+"0": {
+"renderedTime": "2:00 PM–9:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Thu"
+"open": [
+"0": {
+"renderedTime": "2:00 PM–8:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Fri"
+"open": [
+"0": {
+"renderedTime": "Noon–11:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Sat"
+"open": [
+"0": {
+"renderedTime": "1:00 PM–Midnight"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Sun"
+"open": [
+"0": {
+"renderedTime": "11:00 AM–10:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Mon"
+"open": [
+"0": {
+"renderedTime": "Noon–8:00 PM"
+}
+]
+"segments": [
+]
+}
+]
+}
+"pageUpdates": {
+"count": 0
+"items": [
+]
+}
+"inbox": {
+"count": 0
+"items": [
+]
+}
+"venueChains": [
+]
+"attributes": {
+"groups": [
+{
+"type": "price"
+"name": "Price"
+"summary": "$$"
+"count": 1
+"items": [
+"0": {
+"displayName": "Price"
+"displayValue": "$$"
+"priceTier": 2
+}
+]
+}
+{
+"type": "outdoorSeating"
+"name": "Outdoor Seating"
+"summary": "Outdoor Seating"
+"count": 1
+"items": [
+"0": {
+"displayName": "Outdoor Seating"
+"displayValue": "Yes"
+}
+]
+}
+{
+"type": "wifi"
+"name": "Wi-Fi"
+"summary": "Wi-Fi"
+"count": 1
+"items": [
+"0": {
+"displayName": "Wi-Fi"
+"displayValue": "Yes"
+}
+]
+}
+{
+"type": "serves"
+"name": "Menus"
+"summary": "Lunch & Dinner"
+"count": 8
+"items": [
+"0": {
+"displayName": "Lunch"
+"displayValue": "Lunch"
+}
+"1": {
+"displayName": "Dinner"
+"displayValue": "Dinner"
+}
+]
+}
+{
+"type": "drinks"
+"name": "Drinks"
+"summary": "Beer, Wine, Full Bar & Cocktails"
+"count": 5
+"items": [
+"0": {
+"displayName": "Beer"
+"displayValue": "Beer"
+}
+"1": {
+"displayName": "Wine"
+"displayValue": "Wine"
+}
+"2": {
+"displayName": "Full Bar"
+"displayValue": "Full Bar"
+}
+"3": {
+"displayName": "Cocktails"
+"displayValue": "Cocktails"
+}
+]
+}
+{
+"type": "diningOptions"
+"name": "Dining Options"
+"summary": "Table Service & Bar Service"
+"count": 5
+"items": [
+"0": {
+"displayName": "Table Service"
+"displayValue": "Table Service"
+}
+"1": {
+"displayName": "Bar Service"
+"displayValue": "Bar Service"
+}
+]
+}
+{
+"type": "parking"
+"name": "Parking"
+"summary": "Private Lot"
+"count": 5
+"items": [
+"0": {
+"displayName": "Private Lot"
+"displayValue": "Private Lot"
+}
+]
+}
+{
+"type": "restroom"
+"name": "Restroom"
+"summary": "Restroom"
+"count": 1
+"items": [
+"0": {
+"displayName": "Restroom"
+"displayValue": "Yes"
+}
+]
+}
+{
+"type": "wheelchairAccessible"
+"name": "Wheelchair Accessible"
+"summary": "Wheelchair Accessible"
+"count": 1
+"items": [
+"0": {
+"displayName": "Wheelchair Accessible"
+"displayValue": "Yes"
+}
+]
+}
+{
+"type": "tvs"
+"name": "TVs"
+"summary": "TVs"
+"count": 1
+"items": [
+"0": {
+"displayName": "TVs"
+"displayValue": "Yes"
+}
+]
+}
+]
+}
+"bestPhoto": {
+"id": "5bbce15435811b002c03d05b"
+"createdAt": 1539105108
+"source": {
+"name": "Untappd"
+"url": "https://untappd.com"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/18188522_4L_ZiTMRfWUQqmceJA8vl7HPCY6GyaWAeTz7BMg5cck.jpg"
+"width": 2048
+"height": 1536
+"visibility": "public"
+}
+}
+}
+}
+
+/*
+**
+*/
+
+{
+"meta": {
+"code": 200
+"requestId": "5bc6a7091ed2194285dd1a68"
+}
+"notifications": [
+{
+"type": "notificationTray"
+"item": {
+"unreadCount": 0
+}
+}
+]
+"response": {
+"venue": {
+"id": "4b074e25f964a520acfb22e3"
+"name": "Tun Tavern Restaurant & Brewery"
+"contact": {
+"phone": "6093477800"
+"formattedPhone": "(609) 347-7800"
+"twitter": "actuntavern"
+"facebook": "59908563139"
+"facebookUsername": "TunTavernBrewery"
+"facebookName": "Tun Tavern Restaurant & Brewery"
+}
+"location": {
+"address": "2 Convention Blvd"
+"lat": 39.36223909950674
+"lng": -74.43797830512351
+"labeledLatLngs": [
+{
+"label": "display"
+"lat": 39.36223909950674
+"lng": -74.43797830512351
+}
+]
+"postalCode": "08401"
+"cc": "US"
+"city": "Atlantic City"
+"state": "NJ"
+"country": "United States"
+"formattedAddress": [
+"2 Convention Blvd"
+"Atlantic City, NJ 08401"
+]
+}
+"canonicalUrl": "https://foursquare.com/actuntavern"
+"categories": [
+{
+"id": "50327c8591d4c4b30a586d5d"
+"name": "Brewery"
+"pluralName": "Breweries"
+"shortName": "Brewery"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/food/brewery_"
+"suffix": ".png"
+}
+"primary": true
+}
+{
+"id": "4bf58dd8d48988d116941735"
+"name": "Bar"
+"pluralName": "Bars"
+"shortName": "Bar"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/nightlife/pub_"
+"suffix": ".png"
+}
+}
+{
+"id": "4bf58dd8d48988d14e941735"
+"name": "American Restaurant"
+"pluralName": "American Restaurants"
+"shortName": "American"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/food/default_"
+"suffix": ".png"
+}
+}
+]
+"verified": true
+"stats": {
+"tipCount": 87
+"usersCount": 4051
+"checkinsCount": 4122
+"visitsCount": 5447
+}
+"url": "http://www.tuntavern.com"
+"price": {
+"tier": 2
+"message": "Moderate"
+"currency": "$"
+}
+"likes": {
+"count": 95
+"groups": [
+{
+"type": "others"
+"count": 95
+"items": [
+]
+}
+]
+"summary": "95 Likes"
+}
+"like": false
+"dislike": false
+"ok": false
+"rating": 6.5
+"ratingColor": "FFC800"
+"ratingSignals": 192
+"allowMenuUrlEdit": true
+"beenHere": {
+"count": 0
+"unconfirmedCount": 0
+"marked": false
+"lastCheckinExpiredAt": 0
+}
+"specials": {
+"count": 0
+"items": [
+]
+}
+"photos": {
+"count": 241
+"groups": [
+{
+"type": "checkin"
+"name": "Friends' check-in photos"
+"count": 0
+"items": [
+]
+}
+{
+"type": "venue"
+"name": "Venue photos"
+"count": 241
+"items": [
+"0": {
+"id": "5234bec811d2cc2de4d5ac2e"
+"createdAt": 1379188424
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/37977692_Kz_Izl0feRjz9-5hPCxeEfz3ETbeOeYNZmCXzjwwvcw.jpg"
+"width": 717
+"height": 959
+"user": {
+"id": "37977692"
+"firstName": "Dorris"
+"lastName": "Gorski"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/37977692-CEAWH40B4LSBFBZK.jpg"
+}
+}
+"visibility": "public"
+}
+"1": {
+"id": "50be4590e4b01328696a443d"
+"createdAt": 1354646928
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/5129890_Gso1Co1WwKxKR7biARVrNPGvv7CmMzB_BTNW8C4vjbk.jpg"
+"width": 540
+"height": 720
+"user": {
+"id": "5129890"
+"firstName": "Larry"
+"lastName": "DePalma"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/5129890-5K5PORXNXRZMVXDZ.jpg"
+}
+}
+"visibility": "public"
+}
+"2": {
+"id": "4eac61ba9a522a65af90cbf0"
+"createdAt": 1319920058
+"source": {
+"name": "Foursquare for Android"
+"url": "https://foursquare.com/download/#/android"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/251EX2Y1TZV02ATTQJCPWNDO4ZTC3NACCFVE4JDQQAOPETR2.jpg"
+"width": 480
+"height": 640
+"user": {
+"id": "2467641"
+"firstName": "Jamie"
+"lastName": "Coyle"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/blank_girl.png"
+"default": true
+}
+}
+"visibility": "public"
+}
+"3": {
+"id": "4ede5795e5fa78b172c351ca"
+"createdAt": 1323194261
+"source": {
+"name": "Foursquare for Android"
+"url": "https://foursquare.com/download/#/android"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/KWY3WGOCAQOJINLWBV3W1J2CG3CJAIYU1OAO3IUQQP0VHN23.jpg"
+"width": 431
+"height": 720
+"user": {
+"id": "1670958"
+"firstName": "Mandee Giuseppa"
+"lastName": "Renaldi"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/1670958-NMUX3OGWPCF0U1BV.jpg"
+}
+}
+"visibility": "public"
+}
+"4": {
+"id": "4fc14835e4b06f6d2328bc54"
+"createdAt": 1338066997
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/dgyXWwKlG-vJAa1fmxYQ9hbyYUNkSlLPGF_XZM3e-Kc.jpg"
+"width": 720
+"height": 540
+"user": {
+"id": "10470703"
+"firstName": "Jen"
+"lastName": "G"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/LBRFBSUPNZXIR4NU.jpg"
+}
+}
+"visibility": "public"
+}
+"5": {
+"id": "5138e67fe4b0b6b6791293d8"
+"createdAt": 1362683519
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/9160803_YKlC8JOc3Yps_afNWrlRKOLP_YJtW9NPCUE7_3ytAUc.jpg"
+"width": 719
+"height": 719
+"user": {
+"id": "9160803"
+"firstName": "John"
+"lastName": "Langan"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/J03LQPXSH122K1ZA.jpg"
+}
+}
+"visibility": "public"
+}
+]
+}
+]
+"summary": "0 photos"
+}
+"venuePage": {
+"id": "39963911"
+}
+"reasons": {
+"count": 1
+"items": [
+{
+"summary": "Lots of people like this place"
+"type": "general"
+"reasonName": "rawLikesReason"
+}
+]
+}
+"description": "Atlantic City's only Brewery & Restaurant offering award-winning casual gourmet cuisine & handcrafted brews, as well as live entertainment and special events."
+"storeId": ""
+"page": {
+"user": {
+"id": "39963911"
+"firstName": "Tun Tavern Restaurant & Brewery"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/39963911-K4LZQNVD15CLXGK4.png"
+}
+"type": "venuePage"
+"venue": {
+"id": "4b074e25f964a520acfb22e3"
+}
+"tips": {
+"count": 0
+}
+"lists": {
+"groups": [
+{
+"type": "created"
+"count": 2
+"items": [
+]
+}
+]
+}
+"homeCity": "Atlantic City, NJ"
+"bio": ""
+"contact": {
+"twitter": "actuntavern"
+"facebook": "59908563139"
+}
+}
+}
+"hereNow": {
+"count": 0
+"summary": "Nobody here"
+"groups": [
+]
+}
+"createdAt": 1258769957
+"tips": {
+"count": 87
+"groups": [
+{
+"type": "following"
+"name": "Tips from people you follow"
+"count": 0
+"items": [
+]
+}
+{
+"type": "others"
+"name": "All tips"
+"count": 87
+"items": [
+"0": {
+"id": "4cba2510c7228cfae03415ce"
+"createdAt": 1287267600
+"text": "Host staff is disorganized and inattentive ."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4cba2510c7228cfae03415ce"
+"likes": {
+"count": 13
+"groups": [
+"0": {
+"type": "others"
+"count": 13
+"items": [
+]
+}
+]
+"summary": "13 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 5
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "1254379"
+"firstName": "Jason"
+"lastName": "Kelliher"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/1254379-SLEYC4GNOS1SRXUB.jpg"
+}
+}
+}
+"1": {
+"id": "4f10e1cbe4b04720442a512a"
+"createdAt": 1326506443
+"text": "Horrible host service!!! Very disorganized and unhelpful."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4f10e1cbe4b04720442a512a"
+"likes": {
+"count": 5
+"groups": [
+"0": {
+"type": "others"
+"count": 5
+"items": [
+"0": {
+"id": "19320940"
+"firstName": "Tom"
+"lastName": "Bristow"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/19320940-NWWVS4IPFKUXL33N.jpg"
+}
+}
+"1": {
+"id": "2984544"
+"firstName": "Bill"
+"lastName": "Hamberg"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JXDUFI540XLOT0FL.jpg"
+}
+}
+"2": {
+"id": "869074"
+"firstName": "Nicole"
+"lastName": "Rego"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/2QBFRV422AIKHYO0.jpg"
+}
+}
+"3": {
+"id": "8296547"
+"firstName": "Michelle"
+"lastName": "Cohen"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/C1TNWEXFVFV5KM0O.jpg"
+}
+}
+]
+}
+]
+"summary": "5 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 4
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "11282328"
+"firstName": "Megan"
+"lastName": "Beavis"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/40JY31QIYROQ5KCO.jpg"
+}
+}
+}
+"2": {
+"id": "4f14cc07e4b0d3f8a8cf576f"
+"createdAt": 1326763015
+"text": "If you brew ur own beer why do u always run out"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4f14cc07e4b0d3f8a8cf576f"
+"likes": {
+"count": 4
+"groups": [
+"0": {
+"type": "others"
+"count": 4
+"items": [
+"0": {
+"id": "19320940"
+"firstName": "Tom"
+"lastName": "Bristow"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/19320940-NWWVS4IPFKUXL33N.jpg"
+}
+}
+"1": {
+"id": "2984544"
+"firstName": "Bill"
+"lastName": "Hamberg"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JXDUFI540XLOT0FL.jpg"
+}
+}
+"2": {
+"id": "35785266"
+"firstName": "Steph"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/35785266-GBWQGSRA0SVY0N4R.jpg"
+}
+}
+]
+}
+]
+"summary": "4 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 3
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "19320940"
+"firstName": "Tom"
+"lastName": "Bristow"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/19320940-NWWVS4IPFKUXL33N.jpg"
+}
+}
+}
+"3": {
+"id": "52a74ffd11d2a711a30221d1"
+"createdAt": 1386696701
+"text": "You'll get quicker service at Applebee's at convention time!!"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/52a74ffd11d2a711a30221d1"
+"photo": {
+"id": "52a74ffe498e8134662d98f2"
+"createdAt": 1386696702
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/2984544_sYY15jnxhQxq2K0BetZULGYfSGymKBnbF8V4wQrkvSA.jpg"
+"width": 960
+"height": 720
+"visibility": "public"
+}
+"photourl": "https://igx.4sqi.net/img/general/original/2984544_sYY15jnxhQxq2K0BetZULGYfSGymKBnbF8V4wQrkvSA.jpg"
+"likes": {
+"count": 3
+"groups": [
+"0": {
+"type": "others"
+"count": 3
+"items": [
+"0": {
+"id": "910840"
+"firstName": "Richard Krawczyk"
+"lastName": "@TheMrBlueprint"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/51ORBDOGI5I33HIK.jpg"
+}
+}
+"1": {
+"id": "64750837"
+"firstName": "Heather"
+"lastName": "Blue Fulton"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/LRGN4XKG3LKBALUL.jpg"
+}
+}
+"2": {
+"id": "2272679"
+"firstName": "Gwen"
+"lastName": "Richardson"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/53M2BTOOFO4TVS40.jpg"
+}
+}
+]
+}
+]
+"summary": "3 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 3
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "2984544"
+"firstName": "Bill"
+"lastName": "Hamberg"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JXDUFI540XLOT0FL.jpg"
+}
+}
+}
+"4": {
+"id": "527bd1cc11d2f3bf8887823f"
+"createdAt": 1383846348
+"text": "Try the Brewmaster's Cheesesteak - With hot peppers"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/527bd1cc11d2f3bf8887823f"
+"likes": {
+"count": 2
+"groups": [
+"0": {
+"type": "others"
+"count": 2
+"items": [
+"0": {
+"id": "17036603"
+"firstName": "Jen"
+"lastName": "K."
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/ZT45ZYIJD4UIVA0K.jpg"
+}
+}
+"1": {
+"id": "17980823"
+"firstName": "Kev"
+"lastName": "Kage"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/BVRUSONJIFCFSN0X.jpg"
+}
+}
+]
+}
+]
+"summary": "2 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 2
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "8818920"
+"firstName": "Mark"
+"lastName": "Neurohr-Pierpaoli"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/8818920-PZOMCJLER3TS40MX.jpg"
+}
+}
+}
+"5": {
+"id": "517583fce4b074554bf3def3"
+"createdAt": 1366655996
+"text": "The bold and earthy notes of the Irish Red and Berliner Weiss made these two drafts standouts. The Hand Cask English IPA with its crisp, bold, and dry flavors was our beer choice winner of the day."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/517583fce4b074554bf3def3"
+"likes": {
+"count": 2
+"groups": [
+"0": {
+"type": "others"
+"count": 2
+"items": [
+"0": {
+"id": "42375361"
+"firstName": "Mike"
+"lastName": "Brey"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/42375361-RKNKVJR0WAA3QAYR.jpg"
+}
+}
+"1": {
+"id": "44945301"
+"firstName": "Malcom"
+"lastName": "Benites"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/44945301-AF2ZUKPT3RUWLDQK.jpg"
+}
+}
+]
+}
+]
+"summary": "2 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 2
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "44947463"
+"firstName": "Little Nomster"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/P4W0T10BZMDG4NNL.png"
+}
+"type": "page"
+}
+}
+"6": {
+"id": "4fadb738e4b0c0e08df16429"
+"createdAt": 1336784696
+"text": "Pass - not worth coming"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4fadb738e4b0c0e08df16429"
+"likes": {
+"count": 2
+"groups": [
+"0": {
+"type": "others"
+"count": 2
+"items": [
+"0": {
+"id": "2984544"
+"firstName": "Bill"
+"lastName": "Hamberg"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/JXDUFI540XLOT0FL.jpg"
+}
+}
+"1": {
+"id": "55310358"
+"firstName": "John"
+"lastName": "Titus"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/55310358-4YY5SBTTSPUDRRWK.jpg"
+}
+}
+]
+}
+]
+"summary": "2 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 2
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "2114654"
+"firstName": "AJ"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/H3MGPTQKXKMU5HQH.jpg"
+}
+}
+}
+"7": {
+"id": "55931a33498e1696d116b27b"
+"createdAt": 1435703859
+"text": "Had the blue claw fries, awesome, crispy calamari great..."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/55931a33498e1696d116b27b"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+"0": {
+"id": "118791148"
+"firstName": "Messiah"
+"lastName": "R"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/118791148-I1Z1BMNONPDYUMS2.jpg"
+}
+}
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 1
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "118791148"
+"firstName": "Messiah"
+"lastName": "R"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/118791148-I1Z1BMNONPDYUMS2.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"8": {
+"id": "50e89283498e768c87374029"
+"createdAt": 1357419139
+"text": "An enjoyable microbrewery with live entertainment."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/50e89283498e768c87374029"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "44188595"
+"firstName": "DO AC"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/HDXK3DN1CRURMCGD.png"
+}
+"type": "chain"
+}
+}
+"9": {
+"id": "4fa88ab8e4b099106f44cb5a"
+"createdAt": 1336445624
+"text": "Horrible food...old bread, old fries,old bacon...how can u mess up a chicken cheesesteak...horrible..don't eat there.."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4fa88ab8e4b099106f44cb5a"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "2254309"
+"firstName": "evelyn"
+"lastName": "riccio"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/D1QUJXRCOPUT2IIY.jpg"
+}
+}
+}
+"10": {
+"id": "4f5fed00e4b0d9c901a9ff20"
+"createdAt": 1331686656
+"text": "Staple beers are a pale ale, IPA, Light, Stout, and Irish Red. Seasonals that come through are definitely worth checking out, the winters barley-wine style ale was excellent."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4f5fed00e4b0d9c901a9ff20"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+"0": {
+"id": "13666942"
+"firstName": "M."
+"lastName": "Williams"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/13666942_PE3GyXb3_HRBTmNy9mLSP9gI4zdyuHDcabJXCpWwG33GEUkA0txUdQ8iJVSGHV9sYRSo5Irs6.jpg"
+}
+}
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 1
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "22210190"
+"firstName": "Matthew"
+"lastName": "Young"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/LDXN2JG20SMZOZX1.jpg"
+}
+}
+}
+"11": {
+"id": "4f429018e4b08cc373df8331"
+"createdAt": 1329762328
+"text": "Mediocre at best. Food was ok. Service is terrible."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4f429018e4b08cc373df8331"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+"0": {
+"id": "1848305"
+"firstName": "Danielle"
+"lastName": "R"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/RV5BXDEDXHJFNSVP.jpg"
+}
+}
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 1
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "16481389"
+"firstName": "Sabra"
+"lastName": "Mueller"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/MXEUMGVZHQS5BQ1J.jpg"
+}
+}
+}
+"12": {
+"id": "4f29836ce4b01c87685f39f9"
+"createdAt": 1328120684
+"text": "Slow service."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4f29836ce4b01c87685f39f9"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+"0": {
+"id": "1848305"
+"firstName": "Danielle"
+"lastName": "R"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/RV5BXDEDXHJFNSVP.jpg"
+}
+}
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 1
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "18956415"
+"firstName": "Keith"
+"lastName": "Ammons"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/B13GZXUSPPUET3HP.jpg"
+}
+}
+}
+"13": {
+"id": "4eac61246da1cafdaebf610b"
+"createdAt": 1319919908
+"text": "Wear a jacket."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4eac61246da1cafdaebf610b"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "4201369"
+"firstName": "Greta"
+"lastName": "Jensen"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/4KVX55T5WMMCUYH1.jpg"
+}
+}
+}
+"14": {
+"id": "4defc129d164e99c7b4367dd"
+"createdAt": 1307558185
+"text": "Crab cakes Nom Nom I like beer"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4defc129d164e99c7b4367dd"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "1090372"
+"firstName": "Anthony"
+"lastName": "Brown"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/5FLVSCEQO0KS5H0F.jpg"
+}
+}
+}
+"15": {
+"id": "4c22542cfbe5c9b6b5b69921"
+"createdAt": 1277318188
+"text": "The IPA is tasty!"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4c22542cfbe5c9b6b5b69921"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "1734055"
+"firstName": "Nana"
+"lastName": "Willey"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/1734055-UFZ4RLXIRBUAS4RH.jpg"
+}
+}
+}
+"16": {
+"id": "4beaed3670c603bb24389bb4"
+"createdAt": 1273687350
+"text": "Biased against NYers"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/4beaed3670c603bb24389bb4"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "1092221"
+"firstName": "J!"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/EPH5CMPHY5Y2SPG2.jpg"
+}
+}
+}
+"17": {
+"id": "5b04e298fd16bb6bc84fe6e2"
+"createdAt": 1527046808
+"text": "Excellent servers and service. The Tun wings are delicious and the salmon was well made. I love hummus but it definitely wasn’t the best here."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5b04e298fd16bb6bc84fe6e2"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "72993071"
+"firstName": "Nina"
+"lastName": "Frumin"
+"gender": "female"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/72993071_0Kzw-Jc0_N9QBR3BNMoFlOf9qms9vtLVfNc6cSO9Z3NEIt0YVqUUjc-deA3edMp3GAzavQi55.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"18": {
+"id": "5a219a2a0868a2690e0a1a40"
+"createdAt": 1512151594
+"text": "Great service and food. The beer is the best! 5 star"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5a219a2a0868a2690e0a1a40"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "136749897"
+"firstName": "Jeff"
+"lastName": "Carter"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/136749897-1X4PMAXZSX3VQGNP.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+"19": {
+"id": "5946c9e58ad62e404d03ac55"
+"createdAt": 1497811429
+"text": "Had the steakhouse burger. It was good but a little bit too much pepper on one side"
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/5946c9e58ad62e404d03ac55"
+"likes": {
+"count": 0
+"groups": [
+]
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"user": {
+"id": "37361545"
+"firstName": "Mr.Awesome"
+"lastName": "-Philly"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/37361545-L0ZHHNGVEBDQTK0T.jpg"
+}
+}
+"authorInteractionType": "liked"
+}
+]
+}
+]
+}
+"shortUrl": "http://4sq.com/9RgUDb"
+"timeZone": "America/New_York"
+"listed": {
+"count": 23
+"groups": [
+{
+"type": "others"
+"name": "Lists from other people"
+"count": 23
+"items": [
+"0": {
+"id": "50b79d78e4b0dd3bd920d271"
+"name": "Breweries"
+"description": ""
+"type": "others"
+"user": {
+"id": "42375361"
+"firstName": "Mike"
+"lastName": "Brey"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/42375361-RKNKVJR0WAA3QAYR.jpg"
+}
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/mikegrench/list/breweries"
+"canonicalUrl": "https://foursquare.com/mikegrench/list/breweries"
+"createdAt": 1354210680
+"updatedAt": 1402169379
+"followers": {
+"count": 0
+}
+"listItems": {
+"count": 16
+"items": [
+"0": {
+"id": "t517583fce4b074554bf3def3"
+"createdAt": 1373211677
+"tip": {
+"id": "517583fce4b074554bf3def3"
+"createdAt": 1366655996
+"text": "The bold and earthy notes of the Irish Red and Berliner Weiss made these two drafts standouts. The Hand Cask English IPA with its crisp, bold, and dry flavors was our beer choice winner of the day."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/517583fce4b074554bf3def3"
+"likes": {
+"count": 2
+"groups": [
+"0": {
+"type": "others"
+"count": 2
+"items": [
+"0": {
+"id": "42375361"
+"firstName": "Mike"
+"lastName": "Brey"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/42375361-RKNKVJR0WAA3QAYR.jpg"
+}
+}
+"1": {
+"id": "44945301"
+"firstName": "Malcom"
+"lastName": "Benites"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/44945301-AF2ZUKPT3RUWLDQK.jpg"
+}
+}
+]
+}
+]
+"summary": "2 likes"
+}
+"like": false
+"logView": true
+"agreeCount": 2
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"saves": {
+}
+"user": {
+"id": "44947463"
+"firstName": "Little Nomster"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/P4W0T10BZMDG4NNL.png"
+}
+"type": "page"
+}
+}
+}
+]
+}
+}
+"1": {
+"id": "50e88b3ee4b074c1b83d72e7"
+"name": "DO COCKTAILS & CONVERSATIONS"
+"description": ""
+"type": "others"
+"user": {
+"id": "44188595"
+"firstName": "DO AC"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/HDXK3DN1CRURMCGD.png"
+}
+"type": "chain"
+}
+"editable": false
+"public": true
+"collaborative": false
+"url": "/visitac/list/do-cocktails--conversations"
+"canonicalUrl": "https://foursquare.com/visitac/list/do-cocktails--conversations"
+"createdAt": 1357417278
+"updatedAt": 1412263901
+"photo": {
+"id": "51205fa4d63e98f8b87cc0d6"
+"createdAt": 1361076132
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/44188595_G_TD63bCjOZ3PxRi7izrbnolNUNvxtVfujzQElhzg-E.jpg"
+"width": 2592
+"height": 1936
+"user": {
+"id": "44188595"
+"firstName": "DO AC"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/HDXK3DN1CRURMCGD.png"
+}
+"type": "chain"
+}
+"visibility": "public"
+}
+"logView": true
+"followers": {
+"count": 11
+}
+"listItems": {
+"count": 22
+"items": [
+"0": {
+"id": "t50e89283498e768c87374029"
+"createdAt": 1357419074
+"tip": {
+"id": "50e89283498e768c87374029"
+"createdAt": 1357419139
+"text": "An enjoyable microbrewery with live entertainment."
+"type": "user"
+"canonicalUrl": "https://foursquare.com/item/50e89283498e768c87374029"
+"likes": {
+"count": 1
+"groups": [
+"0": {
+"type": "others"
+"count": 1
+"items": [
+]
+}
+]
+"summary": "1 like"
+}
+"like": false
+"logView": true
+"agreeCount": 0
+"disagreeCount": 0
+"todo": {
+"count": 0
+}
+"saves": {
+}
+"user": {
+"id": "44188595"
+"firstName": "DO AC"
+"gender": "none"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/HDXK3DN1CRURMCGD.png"
+}
+"type": "chain"
+}
+}
+"photo": {
+"id": "50283e08e4b0b9a3249133d2"
+"createdAt": 1344814600
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/gvdrb4aUK2UaNEXgIeAaE2ZN0vL_aOvDYvkXg5biXp0.jpg"
+"width": 537
+"height": 720
+"user": {
+"id": "20825333"
+"firstName": "Harry"
+"lastName": "Caramanica"
+"gender": "male"
+"photo": {
+"prefix": "https://igx.4sqi.net/img/user/"
+"suffix": "/XMOJ0CIMJF24VUC5.jpg"
+}
+}
+"visibility": "public"
+}
+}
+]
+}
+}
+]
+}
+]
+}
+"phrases": [
+{
+"phrase": "irish red beer"
+"sample": {
+"entities": [
+"0": {
+"indices": [
+"0": 25
+"1": 39
+]
+"type": "keyPhrase"
+}
+]
+"text": "... terrific! So is the Irish Red beer."
+}
+"count": 2
+}
+{
+"phrase": "devil dog pale ale"
+"sample": {
+"entities": [
+"0": {
+"indices": [
+"0": 24
+"1": 42
+]
+"type": "keyPhrase"
+}
+]
+"text": "... My favorite was the devil dog pale ale."
+}
+"count": 2
+}
+{
+"phrase": "tun light"
+"sample": {
+"entities": [
+"0": {
+"indices": [
+"0": 0
+"1": 9
+]
+"type": "keyPhrase"
+}
+]
+"text": "Tun light beer on tap and the Buffalo wings were good"
+}
+"count": 2
+}
+]
+"hours": {
+"status": "Closed until 11:30 AM tomorrow"
+"richStatus": {
+"entities": [
+]
+"text": "Closed until 11:30 AM tomorrow"
+}
+"isOpen": false
+"isLocalHoliday": false
+"dayData": [
+]
+"timeframes": [
+{
+"days": "Mon–Thu, Sun"
+"includesToday": true
+"open": [
+"0": {
+"renderedTime": "11:30 AM–11:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Fri–Sat"
+"open": [
+"0": {
+"renderedTime": "11:30 AM–1:00 AM"
+}
+]
+"segments": [
+]
+}
+]
+}
+"popular": {
+"isOpen": false
+"isLocalHoliday": false
+"timeframes": [
+{
+"days": "Today"
+"includesToday": true
+"open": [
+"0": {
+"renderedTime": "Noon–7:00 PM"
+}
+"1": {
+"renderedTime": "9:00 PM–10:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Wed"
+"open": [
+"0": {
+"renderedTime": "Noon–3:00 PM"
+}
+"1": {
+"renderedTime": "6:00 PM–Midnight"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Thu"
+"open": [
+"0": {
+"renderedTime": "Noon–3:00 PM"
+}
+"1": {
+"renderedTime": "6:00 PM–9:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Fri"
+"open": [
+"0": {
+"renderedTime": "Noon–Midnight"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Sat"
+"open": [
+"0": {
+"renderedTime": "11:00 AM–Midnight"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Sun"
+"open": [
+"0": {
+"renderedTime": "Noon–10:00 PM"
+}
+]
+"segments": [
+]
+}
+{
+"days": "Mon"
+"open": [
+"0": {
+"renderedTime": "Noon–5:00 PM"
+}
+"1": {
+"renderedTime": "7:00 PM–10:00 PM"
+}
+]
+"segments": [
+]
+}
+]
+}
+"pageUpdates": {
+"count": 0
+"items": [
+]
+}
+"inbox": {
+"count": 0
+"items": [
+]
+}
+"parent": {
+"id": "4b1e697ef964a520b11924e3"
+"name": "Sheraton Atlantic City Convention Center Hotel"
+"contact": {
+"phone": "6093443535"
+"formattedPhone": "(609) 344-3535"
+"facebook": "171621792873577"
+"facebookUsername": "SheratonAtlanticCity"
+"facebookName": "Sheraton Atlantic City Convention Center Hotel"
+}
+"location": {
+"address": "2 Convention Blvd"
+"lat": 39.362026
+"lng": -74.4385566
+"labeledLatLngs": [
+{
+"label": "display"
+"lat": 39.362026
+"lng": -74.4385566
+}
+]
+"postalCode": "08401"
+"cc": "US"
+"city": "Atlantic City"
+"state": "NJ"
+"country": "United States"
+"formattedAddress": [
+"2 Convention Blvd"
+"Atlantic City, NJ 08401"
+]
+}
+"categories": [
+{
+"id": "4bf58dd8d48988d1fa931735"
+"name": "Hotel"
+"pluralName": "Hotels"
+"shortName": "Hotel"
+"icon": {
+"prefix": "https://ss3.4sqi.net/img/categories_v2/travel/hotel_"
+"suffix": ".png"
+}
+"primary": true
+}
+]
+"verified": true
+"stats": {
+"tipCount": 50
+"usersCount": 4683
+"checkinsCount": 8856
+}
+"url": "https://www.marriott.com/hotels/travel/aiysi-sheraton-atlantic-city-convention-center-hotel/"
+"allowMenuUrlEdit": true
+"beenHere": {
+"lastCheckinExpiredAt": 0
+}
+"venuePage": {
+"id": "202373334"
+}
+"storeId": ""
+}
+"hierarchy": [
+{
+"name": "Sheraton Atlantic City Convention Center Hotel"
+"lang": "US"
+"id": "4b1e697ef964a520b11924e3"
+"canonicalUrl": "https://foursquare.com/v/sheraton-atlantic-city-convention-center-hotel/4b1e697ef964a520b11924e3"
+}
+]
+"venueChains": [
+]
+"attributes": {
+"groups": [
+{
+"type": "price"
+"name": "Price"
+"summary": "$$"
+"count": 1
+"items": [
+"0": {
+"displayName": "Price"
+"displayValue": "$$"
+"priceTier": 2
+}
+]
+}
+{
+"type": "payments"
+"name": "Credit Cards"
+"summary": "Credit Cards"
+"count": 7
+"items": [
+"0": {
+"displayName": "Credit Cards"
+"displayValue": "Yes (incl. Discover & Visa)"
+}
+]
+}
+{
+"type": "outdoorSeating"
+"name": "Outdoor Seating"
+"summary": "Outdoor Seating"
+"count": 1
+"items": [
+"0": {
+"displayName": "Outdoor Seating"
+"displayValue": "Yes"
+}
+]
+}
+{
+"type": "wifi"
+"name": "Wi-Fi"
+"summary": "Free Wi-Fi"
+"count": 1
+"items": [
+"0": {
+"displayName": "Wi-Fi"
+"displayValue": "Free"
+}
+]
+}
+{
+"type": "serves"
+"name": "Menus"
+"summary": "Dinner, Lunch & more"
+"count": 8
+"items": [
+"0": {
+"displayName": "Brunch"
+"displayValue": "Brunch"
+}
+"1": {
+"displayName": "Lunch"
+"displayValue": "Lunch"
+}
+"2": {
+"displayName": "Dinner"
+"displayValue": "Dinner"
+}
+]
+}
+{
+"type": "drinks"
+"name": "Drinks"
+"summary": "Beer, Full Bar & Cocktails"
+"count": 5
+"items": [
+"0": {
+"displayName": "Beer"
+"displayValue": "Beer"
+}
+"1": {
+"displayName": "Full Bar"
+"displayValue": "Full Bar"
+}
+"2": {
+"displayName": "Cocktails"
+"displayValue": "Cocktails"
+}
+]
+}
+{
+"type": "diningOptions"
+"name": "Dining Options"
+"count": 5
+"items": [
+"0": {
+"displayName": "Delivery"
+"displayValue": "No Delivery"
+}
+]
+}
+]
+}
+"bestPhoto": {
+"id": "5234bec811d2cc2de4d5ac2e"
+"createdAt": 1379188424
+"source": {
+"name": "Foursquare for iOS"
+"url": "https://foursquare.com/download/#/iphone"
+}
+"prefix": "https://igx.4sqi.net/img/general/"
+"suffix": "/37977692_Kz_Izl0feRjz9-5hPCxeEfz3ETbeOeYNZmCXzjwwvcw.jpg"
+"width": 717
+"height": 959
+"visibility": "public"
+}
+"colors": {
+"highlightColor": {
+"photoId": "5234bec811d2cc2de4d5ac2e"
+"value": -14675952
+}
+"highlightTextColor": {
+"photoId": "5234bec811d2cc2de4d5ac2e"
+"value": -1
+}
+"algoVersion": 3
+}
+}
+}
+}

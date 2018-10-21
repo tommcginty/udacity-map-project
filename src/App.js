@@ -2,21 +2,28 @@ import React, { Component } from 'react';
 import './App.css';
 import * as BreweryAPI from './api/BreweryAPI.js';
 import Header from './components/Header.js';
-import BeerList from './components/BeerList.js';  
+import BeerList from './components/BeerList.js';
+import {
+  checkData,
+  getInfoContent,
+  getErrorContent
+} from "./util/helpers";  
 
 class neighborhoodMap extends Component {
 
   state = {
     breweries: [],
+    breweries2: [],
     mapNJ: {},
-    markers: []
+    markers: [],
+    infowindow: {}
   }
   renderMap = () => {
     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY&callback=initMap")
     window.initMap = this.initMap
   }
   initMap = () => {
-    let map = new window.google.maps.Map(document.getElementById('map'), {
+    const map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.514327, lng: -74.663288},
       zoom: 9,
       mapTypeControl: false,
@@ -24,29 +31,44 @@ class neighborhoodMap extends Component {
     })
     this.setState({mapNJ: map})
     window.google.maps.event.addListenerOnce(map, 'idle', () => {
-          this.setState({mapNJ: map})
           this.makeMarkers(this.state.breweries)
     });
   }
 
   makeMarkers = (locations) => {
+    const infowindow = new window.google.maps.InfoWindow({ maxWidth: 250 });
     let markerArray = []
+    let breweryArray = this.state.breweries
     locations.map(brewery => {
       let marker = new window.google.maps.Marker({
         position: {lat: brewery.location.lat, lng: brewery.location.lng},
         map: this.state.mapNJ,
         title: brewery.name,
         animation: window.google.maps.Animation.DROP,
-      })
-      let infowindow =  new window.google.maps.InfoWindow({
-        content: brewery.categories[0].shortName
+        id: brewery.id
       })
       marker.addListener('click', function() {
-        infowindow.open(this.state.mapNJ, marker);
+        const marker = this;
+        marker.setAnimation(window.google.maps.Animation.BOUNCE);
+        setTimeout(() => marker.setAnimation(null), 1400);
+        BreweryAPI.getBreweryInfo(brewery.id)
+        .then(data => {
+            checkData(marker, data);
+            getInfoContent(marker);
+          })
+        .catch(() => getErrorContent(marker))
+        .finally(() => {
+          // set content and open window
+          infowindow.setContent(marker.infoContent);
+          infowindow.open(this.map, marker);
+          })
       });
+      brewery.marker = marker
       markerArray.push(marker);
     })
-    this.setState({ markers: markerArray})
+    this.setState({ markers: markerArray })
+    this.setState({ infowindow: infowindow})
+    this.setState({ breweries: breweryArray })
   }
 
 hideMarkers = (markersArray) => {
@@ -56,28 +78,36 @@ hideMarkers = (markersArray) => {
   }
 }
 
-showMarkers = (filteredList) => {
-  if (this.state.markers.length > 0) {
+showMarkers = (filteredList, markers) => {
+  if (markers.length > 0) {
     for (let i = 0; i < filteredList.length; i++) {
-      for (let j = 0; j < this.state.markers.length; j++)
-        if (this.state.markers.title === filteredList.name)
-          this.state.markers[i].setVisible(true)
+      for (let j = 0; j < markers.length; j++) {
+        if (markers[j].title === filteredList[i].name) {
+          markers[j].setVisible(true)
+        }
+      }
     }
   }
 }
 
 
+
+
+
   componentDidMount() {
+    
     BreweryAPI.getAll()
     .then(response => {
       this.setState({ breweries: response }, this.renderMap());
     });
+
   }
 
   componentDidUpdate() {
 }
 
   render() {
+
     return (
       <div>
         <div className='container'>
@@ -87,6 +117,7 @@ showMarkers = (filteredList) => {
             markers={this.state.markers}
             hideMarkers={this.hideMarkers}
             showMarkers={this.showMarkers}
+            infowindow={this.infowindow}
           />
           <div className='map-container'>
             <div id='map'></div>

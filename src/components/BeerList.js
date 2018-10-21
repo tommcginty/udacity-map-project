@@ -8,21 +8,28 @@ import sortBy from 'sort-by'
 class BeerList extends Component {
 	static propTypes = {
 		breweries: PropTypes.array.isRequired,
-		makeMarkers: PropTypes.func.isRequired,
 		markers: PropTypes.array.isRequired,
 		hideMarkers: PropTypes.func.isRequired,
-		mapNJ: PropTypes.object.isRequired
+		showMarkers: PropTypes.func.isRequired,
 	}
 state = {
 	query: '',
 }
 
 updateQuery = (query) => {
-	this.setState({ query: query.trim() })
+	this.setState({ query: query })
 }
 
 clearQuery = () => {
 	this.setState({query: '' })
+}
+
+openWindow = () => {
+	console.log('foo')
+	//window.google.maps.event.trigger(this.props.marker, 'click')
+}
+
+componentDidMount() {
 }
 
 
@@ -57,17 +64,16 @@ componentDidUpdate() {
 					/>
 				</div>
 				<ul className='beer-list'>
-					{filteredList.map((brewery) => (
-						<li key={brewery.id} className='contact-list-item'>
-							<div className='contact-details'>
-								<p>{brewery.name}</p>
-								<p>{brewery.location.city}</p>
+					{filteredList.map((breweries) => (
+						<li key={breweries.id} className='contact-list-item'>
+							<div className='contact-details' onCLick={this.openWindow}>
+									<p>{breweries.name}</p>
+									<p>{breweries.location.city}</p>
 							</div>
 						</li>
 					))}
 				</ul>
-								{showMarkers(filteredList)}
-
+				{showMarkers(filteredList, markers)}
 			</div>
 
 			)
