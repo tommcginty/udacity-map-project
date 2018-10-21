@@ -11,7 +11,6 @@ export const checkData = (marker, data) => {
     bestPhoto,
     contact,
     location,
-    attributes,
     url,
     tips
   } = place; // destructuring

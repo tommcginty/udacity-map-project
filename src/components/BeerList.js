@@ -29,6 +29,10 @@ openWindow = () => {
 	//window.google.maps.event.trigger(this.props.marker, 'click')
 }
 
+test = () => {
+	console.log('bar')
+}
+
 componentDidMount() {
 }
 
@@ -37,7 +41,7 @@ componentDidUpdate() {
 
 };
 	render () {
-		const { breweries, mapNJ, markers, hideMarkers, showMarkers} = this.props
+		const { breweries, markers, hideMarkers, showMarkers} = this.props
 		const { query } = this.state
 		let filteredList
 		if (this.state.query) {
@@ -66,7 +70,7 @@ componentDidUpdate() {
 				<ul className='beer-list'>
 					{filteredList.map((breweries) => (
 						<li key={breweries.id} className='contact-list-item'>
-							<div className='contact-details' onCLick={this.openWindow}>
+							<div className='contact-details' onCLick={this.test}>
 									<p>{breweries.name}</p>
 									<p>{breweries.location.city}</p>
 							</div>

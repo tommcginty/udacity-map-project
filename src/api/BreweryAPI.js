@@ -15,15 +15,6 @@ export const getAll = () =>
 export const getBreweryInfo = (breweryId) => 
 	fetch(`${fsURL}${breweryId}?&client_id=${clientID}&client_secret=${clientSecret}&v=${version}`)
 	.then(res => res.json())
-	//.then(res => res.response.venue)
-
-
-const getRandomUser = (breweryId) => {
-	let breweryURL = `https://randomuser.me/api`
-	fetch(breweryURL)
-	.then(res => res.json())
-	//.then(info => info.response.venue)
-}
 
 export const getAll2 = () => 
  	fetch(api)
@@ -31,13 +22,3 @@ export const getAll2 = () =>
     .then(breweries => breweries.response.venues.filter(venue => venue.location.address).filter(venue => venue.categories[0].shortName === "Brewery"))
     .then(res => res.map(ids => getBreweryInfo(ids.id)))
     .then(res => Promise.all(res))
-/* 
- export const getBreweryInfo = (breweryId) => {
-  const requestURL = `${fsURL}${breweryId}?&client_id=${clientID}&client_secret=${clientSecret}&v=${version}`;
-  return fetch(requestURL).then(response => {
-    if (!response.ok) {
-      throw response;
-    } else return response.json();
-  });
-};
-*/

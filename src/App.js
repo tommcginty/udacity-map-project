@@ -66,13 +66,12 @@ class neighborhoodMap extends Component {
       brewery.marker = marker
       markerArray.push(marker);
     })
-    this.setState({ markers: markerArray })
-    this.setState({ infowindow: infowindow})
-    this.setState({ breweries: breweryArray })
+    this.setState({ markers: markerArray,
+                    infowindow: infowindow,
+                    breweries: breweryArray })
   }
 
 hideMarkers = (markersArray) => {
-  let map = this.state.mapNJ
   for (let i = 0; i < markersArray.length; i++) {
     markersArray[i].setVisible(false);
   }
