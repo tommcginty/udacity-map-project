@@ -18,7 +18,6 @@ class BeerList extends Component {
 	}
 state = {
 	query: '',
-	mapOpen: true
 }
 
 updateQuery = (query) => {
@@ -33,19 +32,18 @@ openWindow = () => {
 	window.google.maps.event.trigger(this.props.marker, 'click')
 }
 
-toggleBeerList = () => {
-	console.log("I was toggled")
-}
+
 
 componentDidMount() {
 }
 
 
 componentDidUpdate() {
+	console.log(this.props.menuOpen)
 
 };
 	render () {
-		const { breweries, markers } = this.props
+		const { breweries, markers, menuOpen } = this.props
 		const { query } = this.state
 		let filteredList
 		if (this.state.query) {
@@ -56,8 +54,7 @@ componentDidUpdate() {
 		}
 		filteredList.sort(sortBy('name'))
 		return (
-
-			<div className='beer-list-container open'>
+			<div className={menuOpen ? 'beer-list-container open' : 'beer-list-container'} >
 				<div className='filter-brewery'>
 					<input
 						type='text' 
@@ -73,7 +70,7 @@ componentDidUpdate() {
 				</div>
 				<ul className='beer-list'>
 					{filteredList.map((breweries) => (
-						<Brewery key={breweries.id} className='brewery-list-item' breweries={breweries}/>
+						<Brewery key={breweries.id} className='brewery-list-item' breweries={breweries} openWindow={this.openWindow}/>
 					))}
 				</ul>
 				{showMarkers(filteredList, markers)}

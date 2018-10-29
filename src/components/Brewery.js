@@ -18,11 +18,9 @@ class Brewery extends Component {
 		const { breweries } = this.props
 		//console.log(breweries)
 		return (
-	<li>
-	<div className='brewery-list-item' onClick={() => this.openWindow()}>
-		<p className='brewery-name'>{breweries.name}</p>
+	<li className='brewery-list-item' onClick={() => this.openWindow()}>
+		<h2 className='brewery-name'>{breweries.name}</h2>
 		<p className='brewery-city'>{breweries.location.city}</p>
-			</div>
 	</li>
 
 	)}
@@ -30,9 +28,3 @@ class Brewery extends Component {
 
 export default Brewery
 
-/*
-<li>
-		<p>{breweries.name}</p>
-		</div>
-</li>
-*/

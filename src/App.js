@@ -37,7 +37,7 @@ class neighborhoodMap extends Component {
   }
 
   makeMarkers = (locations) => {
-    const infowindow = new window.google.maps.InfoWindow({ maxWidth: 300 });
+    const infowindow = new window.google.maps.InfoWindow();
     let markerArray = []
     let breweryArray = this.state.breweries
     locations.forEach(brewery => {
@@ -71,6 +71,10 @@ class neighborhoodMap extends Component {
                     infowindow: infowindow,
                     breweries: breweryArray })
   }
+  toggleBeerList = () => {
+    console.log(this.state.menuOpen)
+  this.setState({ menuOpen: !this.state.menuOpen})
+  }
 
   componentDidMount() {
     BreweryAPI.getAll()
@@ -92,9 +96,17 @@ class neighborhoodMap extends Component {
 
     return (
         <div className='container'>
-        <Header />
-
+              <header>
+        <a id="menu" className="header__menu" onClick={() => this.toggleBeerList()}>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+                </svg>
+            </a>
+      <h1 className="app_header">South Jersey Brewery Finder</h1>
+      </header>
+      <div className='map-container'>
           <BeerList 
+            menuOpen={this.state.menuOpen}
             breweries={this.state.breweries} 
             markers={this.state.markers}
             hideMarkers={this.hideMarkers}
@@ -102,6 +114,7 @@ class neighborhoodMap extends Component {
             infowindow={this.infowindow}
           />
             <div id='map'></div>
+          </div>
         </div>
 
     )

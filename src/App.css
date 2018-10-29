@@ -5,16 +5,15 @@ ul {
 }
 
 .container {
-  display: flex;
   height: 100vh;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Header */
 header {
   display: flex;
-  box-sizing: border-box;
-  position: absolute;
   background-color: #281d19;
   width: 100%;
   height: 56px;
@@ -28,31 +27,35 @@ header {
 
 .app_header {
   color: #f2dbc4;
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'Catamaran', sans-serif;
   align-self: center;
   margin-left: 20px;
 }
 
-
+/* Map */
+.map-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+.map-container>div{
+  transition: all .3s;
+}
+#map {
+  flex: 1 0 0;
+}
 
 /* Beer List */
 
 .beer-list-container {
-  position: absolute;
-  margin-top: 56px;
-  background-color: #d4dad6;
-  width: 250px;
-  height: 100%;
+  background-color: #a39d9d;
+  width: 0px;
+  flex: 0 0 0;
   overflow: hidden;
-  padding-bottom: 56px;  
-  transform: translate(-250px, 0);
-  transition: transform 0.3s ease; 
 }
-
 .open {
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
+  flex: 0 0 250px;
 }
 
 .filter-brewery input {
@@ -66,21 +69,30 @@ header {
 .beer-list {
   overflow: scroll;
   height: 100%;
+  width: 90%;
+  padding: 0;
+  margin: auto;
 }
+
 .brewery-list-item {
-  border: 10px;
+  text-align: center;
+  background-color: #d4dad6;
+  height: fit-content;
 }
 
-
-/* Map */
-.map-container { 
-  padding-top: 56px;
-  background-color: cyan;
+.brewery-name {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1;
+  padding-top: 10px;
 }
-#map {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+.brewery-city {
+font-family: 'Catamaran', sans-serif;
+font-style: italic;  
+font-size: .8em;
+line-height: 0;
+
 }
 
 /* infowindow */
@@ -89,6 +101,7 @@ header {
   display: flex;
   flex-wrap: nowrap;
 }
+
 
 .place-title,
 .place-contact,
