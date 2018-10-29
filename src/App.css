@@ -78,14 +78,15 @@ header {
   text-align: center;
   background-color: #d4dad6;
   height: fit-content;
+  align-content: center;
 }
 
 .brewery-name {
   font-family: 'Catamaran', sans-serif;
   font-weight: 300;
   font-size: 1.2em;
-  line-height: 1;
-  padding-top: 10px;
+  line-height: 1.3;
+  padding: 10px 5px 0 5px;
 }
 .brewery-city {
 font-family: 'Catamaran', sans-serif;
