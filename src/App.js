@@ -16,7 +16,8 @@ class neighborhoodMap extends Component {
     breweries2: [],
     mapNJ: {},
     markers: [],
-    infowindow: {}
+    infowindow: {},
+    menuOpen: true
   }
   renderMap = () => {
     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY&callback=initMap")
@@ -36,10 +37,10 @@ class neighborhoodMap extends Component {
   }
 
   makeMarkers = (locations) => {
-    const infowindow = new window.google.maps.InfoWindow({ maxWidth: 250 });
+    const infowindow = new window.google.maps.InfoWindow({ maxWidth: 300 });
     let markerArray = []
     let breweryArray = this.state.breweries
-    locations.map(brewery => {
+    locations.forEach(brewery => {
       let marker = new window.google.maps.Marker({
         position: {lat: brewery.location.lat, lng: brewery.location.lng},
         map: this.state.mapNJ,
@@ -71,30 +72,7 @@ class neighborhoodMap extends Component {
                     breweries: breweryArray })
   }
 
-hideMarkers = (markersArray) => {
-  for (let i = 0; i < markersArray.length; i++) {
-    markersArray[i].setVisible(false);
-  }
-}
-
-showMarkers = (filteredList, markers) => {
-  if (markers.length > 0) {
-    for (let i = 0; i < filteredList.length; i++) {
-      for (let j = 0; j < markers.length; j++) {
-        if (markers[j].title === filteredList[i].name) {
-          markers[j].setVisible(true)
-        }
-      }
-    }
-  }
-}
-
-
-
-
-
   componentDidMount() {
-    
     BreweryAPI.getAll()
     .then(response => {
       this.setState({ breweries: response }, this.renderMap());
@@ -103,14 +81,19 @@ showMarkers = (filteredList, markers) => {
   }
 
   componentDidUpdate() {
+    if (!this.state.breweries) {
+      alert('Error loading breweries, check your network connection')
+    }
+
+      
 }
 
   render() {
 
     return (
-      <div>
         <div className='container'>
-          <Header />
+        <Header />
+
           <BeerList 
             breweries={this.state.breweries} 
             markers={this.state.markers}
@@ -118,12 +101,9 @@ showMarkers = (filteredList, markers) => {
             showMarkers={this.showMarkers}
             infowindow={this.infowindow}
           />
-          <div className='map-container'>
             <div id='map'></div>
-          </div>
         </div>
 
-      </div>
     )
   }
 }

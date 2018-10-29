@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import '../App.css';
+import Brewery from './Brewery.js';
 //import * as BreweryAPI from '../api/BreweryAPI.js';
 import PropTypes from 'prop-types';
 import escapeRegEx from 'escape-string-regexp'
 import sortBy from 'sort-by'
-
+import {
+  hideMarkers,
+  showMarkers,
+} from "../util/helpers"; 
 class BeerList extends Component {
 	static propTypes = {
 		breweries: PropTypes.array.isRequired,
 		markers: PropTypes.array.isRequired,
-		hideMarkers: PropTypes.func.isRequired,
-		showMarkers: PropTypes.func.isRequired,
+		//hideMarkers: PropTypes.func.isRequired,
+		//showMarkers: PropTypes.func.isRequired,
 	}
 state = {
 	query: '',
+	mapOpen: true
 }
 
 updateQuery = (query) => {
@@ -25,12 +30,11 @@ clearQuery = () => {
 }
 
 openWindow = () => {
-	console.log('foo')
-	//window.google.maps.event.trigger(this.props.marker, 'click')
+	window.google.maps.event.trigger(this.props.marker, 'click')
 }
 
-test = () => {
-	console.log('bar')
+toggleBeerList = () => {
+	console.log("I was toggled")
 }
 
 componentDidMount() {
@@ -41,7 +45,7 @@ componentDidUpdate() {
 
 };
 	render () {
-		const { breweries, markers, hideMarkers, showMarkers} = this.props
+		const { breweries, markers } = this.props
 		const { query } = this.state
 		let filteredList
 		if (this.state.query) {
@@ -50,10 +54,10 @@ componentDidUpdate() {
 		} else {
 			filteredList = breweries
 		}
-
 		filteredList.sort(sortBy('name'))
 		return (
-			<div className='beer-list-container'>
+
+			<div className='beer-list-container open'>
 				<div className='filter-brewery'>
 					<input
 						type='text' 
@@ -69,12 +73,7 @@ componentDidUpdate() {
 				</div>
 				<ul className='beer-list'>
 					{filteredList.map((breweries) => (
-						<li key={breweries.id} className='contact-list-item'>
-							<div className='contact-details' onCLick={this.test}>
-									<p>{breweries.name}</p>
-									<p>{breweries.location.city}</p>
-							</div>
-						</li>
+						<Brewery key={breweries.id} className='brewery-list-item' breweries={breweries}/>
 					))}
 				</ul>
 				{showMarkers(filteredList, markers)}

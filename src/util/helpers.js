@@ -17,7 +17,7 @@ export const checkData = (marker, data) => {
 
   marker.canonicalUrl = canonicalUrl ? canonicalUrl : "https://foursquare.com/";
   marker.photo = bestPhoto
-    ? `${bestPhoto.prefix}height100${bestPhoto.suffix}` // ES6 template literals
+    ? `${bestPhoto.prefix}width100${bestPhoto.suffix}` // ES6 template literals
     : noImage;
   marker.phone =
     contact && contact.formattedPhone ? contact.formattedPhone : "";
@@ -34,7 +34,6 @@ export const checkData = (marker, data) => {
 };
 
 
-// build infowindow content
 export const getInfoContent = marker => {
   marker.infoContent = `<div class="place">
                       <img class="place-photo" src=${marker.photo} alt="${marker.title}">
@@ -43,11 +42,11 @@ export const getInfoContent = marker => {
                         <a class="place-phone" href="tel:${marker.phone}">${marker.phone}</a>
                         <p class="place-contact">${marker.address}</p>
                         <p class="place-contact">${marker.city}, ${marker.state} ${marker.postalCode}</p>
-                        <p class="place-contact">
-                          <a href="${marker.url}"" target="_blank">${marker.url}</a>
-                        </p>
                       </div>
                     </div>
+                    <p class="place-contact">
+                      <a href="${marker.url}"" target="_blank">${marker.url}</a>
+                    </p>
                     <p class="place-tip">Tip: ${marker.tip}</p>
                     <a class="place-link" href="${marker.canonicalUrl}" target="_blank">
                       <span>Read more</span>
@@ -56,11 +55,39 @@ export const getInfoContent = marker => {
   return marker;
 };
 
-// build infowindow content when there is an error
 export const getErrorContent = marker => {
   marker.infoContent = `<div class="venue-error"  role="alert">
-        <h3>Foursquare Venue Details request for ${marker.title} failed</h3>
+        <h3>Problem displaying details for ${marker.title} </h3>
         <p>Try again later...</p>
       </div>`;
   return marker;
 };
+
+export const hideMarkers = (markersArray) => {
+  for (let i = 0; i < markersArray.length; i++) {
+    markersArray[i].setVisible(false);
+  }
+}
+
+export const showMarkers = (filteredList, markers) => {
+  if (markers.length > 0) {
+    for (let i = 0; i < filteredList.length; i++) {
+      for (let j = 0; j < markers.length; j++) {
+        if (markers[j].title === filteredList[i].name) {
+          markers[j].setVisible(true)
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

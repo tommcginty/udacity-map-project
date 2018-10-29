@@ -1,36 +1,84 @@
+/* App */
 
-header {
-  position: absolute;
-  background-color: Yellow;
-  width: 100%;
-  height: 56px;
+ul {
+  list-style: none;
 }
+
 .container {
   display: flex;
   height: 100vh;
   width: 100vw;
-  background-color: gray;
 }
+
+/* Header */
+header {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+  background-color: #281d19;
+  width: 100%;
+  height: 56px;
+}
+
+.header__menu svg {
+  width: 40px;
+  fill: #a39d9d;
+  padding: 8px;
+}
+
+.app_header {
+  color: #f2dbc4;
+  font-size: 2em;
+  font-family: 'Catamaran', sans-serif;
+  align-self: center;
+  margin-left: 20px;
+}
+
+
+
+/* Beer List */
+
 .beer-list-container {
-  display: block;
+  position: absolute;
   margin-top: 56px;
-  background-color: brown;
-  width: 300px;
+  background-color: #d4dad6;
+  width: 250px;
+  height: 100%;
   overflow: hidden;
-  padding-bottom: 56px;
+  padding-bottom: 56px;  
+  transform: translate(-250px, 0);
+  transition: transform 0.3s ease; 
 }
+
+.open {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.filter-brewery input {
+  width: 90%;
+  height: 24px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+}
+
 .beer-list {
-  background-color: green;
   overflow: scroll;
   height: 100%;
 }
-.map-container {
+.brewery-list-item {
+  border: 10px;
+}
+
+
+/* Map */
+.map-container { 
   padding-top: 56px;
   background-color: cyan;
-  width: 100%;
-  height: calc(1000% -56px);
 }
 #map {
+  position: absolute;
   height: 100%;
   width: 100%;
 }
@@ -96,3 +144,4 @@ header {
   color: #f94877;
   text-align: center;
 }
+
