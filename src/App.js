@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import * as BreweryAPI from './api/BreweryAPI.js';
-import Header from './components/Header.js';
 import BeerList from './components/BeerList.js';
 import {
   checkData,
@@ -17,7 +16,7 @@ class neighborhoodMap extends Component {
     mapNJ: {},
     markers: [],
     infowindow: {},
-    menuOpen: true
+    menuOpen: false
   }
   renderMap = () => {
     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY&callback=initMap")
@@ -26,7 +25,7 @@ class neighborhoodMap extends Component {
   initMap = () => {
     const map = new window.google.maps.Map(document.getElementById('map'), {
       center: {lat: 39.514327, lng: -74.663288},
-      zoom: 9,
+      zoom: 2,
       mapTypeControl: false,
       fullscreenControl: false
     })
@@ -67,10 +66,18 @@ class neighborhoodMap extends Component {
       brewery.marker = marker
       markerArray.push(marker);
     })
+    let bounds = new window.google.maps.LatLngBounds()
+    markerArray.forEach(marker =>{
+      bounds.extend(marker.getPosition());
+      })
+    let map = this.state.mapNJ;
+    map.fitBounds(bounds)
     this.setState({ markers: markerArray,
                     infowindow: infowindow,
                     breweries: breweryArray })
   }
+
+
   toggleBeerList = () => {
     console.log(this.state.menuOpen)
   this.setState({ menuOpen: !this.state.menuOpen})
@@ -97,12 +104,12 @@ class neighborhoodMap extends Component {
     return (
         <div className='container'>
               <header>
-        <a id="menu" className="header__menu" onClick={() => this.toggleBeerList()}>
+        <div id="menu" className="header-menu" onClick={() => this.toggleBeerList()}>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
                 </svg>
-            </a>
-      <h1 className="app_header">South Jersey Brewery Finder</h1>
+            </div>
+      <h1 className="app-header">South Jersey Craft Beer Directory</h1>
       </header>
       <div className='map-container'>
           <BeerList 

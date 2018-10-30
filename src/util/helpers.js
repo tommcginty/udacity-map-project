@@ -1,5 +1,4 @@
 import noImage from "../images/no-image-available.png";
-import fsButton from "../images/foursquare-button.png";
 
 
   // set up fallbacks in case data is incomplete
@@ -24,8 +23,8 @@ export const checkData = (marker, data) => {
   marker.address = location.address;
   marker.city = location.city;
   marker.state = location.state;
-  marker.postalCode = location.postalCode;
-  marker.url = url ? url : " ";
+  marker.postalCode = location.postalCode ? location.postalCode : "";
+  marker.url = url ? url : "";
 
   marker.tip =
     tips.count > 0 ? `"${tips.groups[0].items[0].text}"` : "No tips available";
@@ -35,23 +34,25 @@ export const checkData = (marker, data) => {
 
 
 export const getInfoContent = marker => {
+  if(!marker.url) {
+    marker.url = `https://www.google.co.in/search?q=${marker.title}`;
+  }
   marker.infoContent = `<div class="place">
                       <img class="place-photo" src=${marker.photo} alt="${marker.title}">
-                      <div class="place-meta">
+                      <div class="place-info">
                         <h2 class="place-title">${marker.title}</h2>
                         <a class="place-phone" href="tel:${marker.phone}">${marker.phone}</a>
                         <p class="place-contact">${marker.address}</p>
                         <p class="place-contact">${marker.city}, ${marker.state} ${marker.postalCode}</p>
+                        <p class="place-contact">
+                            <a href="${marker.url}"" target="_blank">Website</a>
+                        </p>
                       </div>
                     </div>
-                    <p class="place-contact">
-                      <a href="${marker.url}"" target="_blank">${marker.url}</a>
-                    </p>
-                    <p class="place-tip">Tip: ${marker.tip}</p>
-                    <a class="place-link" href="${marker.canonicalUrl}" target="_blank">
-                      <span>Read more</span>
-                      <img class="fs-link" src="${fsButton}">
-                    </a>`;
+                    <div class="place-footer">
+                      <p class="place-tip">Tip: ${marker.tip}</p>
+                      <p class="place-web">See more tips on <a href="${marker.canonicalUrl}"" target="_blank">FourSquare</a></p>
+                      </div>`;
   return marker;
 };
 
@@ -64,11 +65,29 @@ export const getErrorContent = marker => {
 };
 
 export const hideMarkers = (markersArray) => {
+  markersArray.forEach (marker => {
+    marker.setVisible(false);
+  })
+}
+
+export const showMarkers = (filteredList, markers) => {
+  if (markers.length > 0) {
+    filteredList.forEach (item => {
+      markers.forEach (marker => {
+        if (marker.title === item.name) {
+          marker.setVisible(true)
+        }
+      })
+    })
+  }
+}
+
+/*
+export const hideMarkers = (markersArray) => {
   for (let i = 0; i < markersArray.length; i++) {
     markersArray[i].setVisible(false);
   }
 }
-
 export const showMarkers = (filteredList, markers) => {
   if (markers.length > 0) {
     for (let i = 0; i < filteredList.length; i++) {
@@ -80,8 +99,7 @@ export const showMarkers = (filteredList, markers) => {
     }
   }
 }
-
-
+*/
 
 
 

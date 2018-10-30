@@ -17,17 +17,18 @@ header {
   background-color: #281d19;
   width: 100%;
   height: 56px;
+  align-items: center;
 }
 
-.header__menu svg {
+.header-menu svg {
   width: 40px;
   fill: #a39d9d;
   padding: 8px;
 }
 
-.app_header {
+.app-header {
   color: #f2dbc4;
-  font-size: 1em;
+  font-size: 2em;
   font-family: 'Catamaran', sans-serif;
   align-self: center;
   margin-left: 20px;
@@ -53,6 +54,7 @@ header {
   width: 0px;
   flex: 0 0 0;
   overflow: hidden;
+  padding-bottom: 60px;
 }
 .open {
   flex: 0 0 250px;
@@ -67,6 +69,7 @@ header {
 }
 
 .beer-list {
+    font-family: 'Catamaran', sans-serif;
   overflow: scroll;
   height: 100%;
   width: 90%;
@@ -80,33 +83,54 @@ header {
   height: fit-content;
   align-content: center;
 }
+.brewery-list-item:hover {
+  cursor: pointer;
+}
 
 .brewery-name {
-  font-family: 'Catamaran', sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 1.2em;
   line-height: 1.3;
   padding: 10px 5px 0 5px;
 }
 .brewery-city {
-font-family: 'Catamaran', sans-serif;
+font-weight: 300;
 font-style: italic;  
 font-size: .8em;
-line-height: 0;
-
+line-height: 1;
+margin-top: -10px;
+padding-top: 0;
 }
 
 /* infowindow */
+.gm-style-iw {
+  max-width: 250px !important;
+}
 
 .place {
   display: flex;
   flex-wrap: nowrap;
 }
+.place a,
+.place-footer a {
+  text-decoration: none;
+   color: #281d19; 
+}
+.place a:visited,
+.place-footer a:visited {
+  color: #3f531;
+}
 
+.place a:hover,
+.place-footer a:hover, 
+.place-phone:hover {
+  color: #d4dad6;
+}
 
 .place-title,
 .place-contact,
-.place-phone {
+.place-phone,
+.place-web {
   font-size: 1.2em;
   margin: 0 0 0 10px;
 }
@@ -117,7 +141,7 @@ line-height: 0;
 }
 
 .place-phone {
-  color: #4e595d;
+  color: #3f3531;
   font-weight: bold;
   text-decoration: none;
 }
@@ -128,34 +152,57 @@ line-height: 0;
 .place-phone {
   font-size: .9em;
 }
+.place-web {
+  font-family: 'Catamaran', sans-serif;
+  margin-top: 5px;
+  font-size: .8em;
+  text-align: center;
+}
 
 .place-tip {
   font-style: italic;
 }
 
-.place-link {
-  color: #f94877;
-  display: block;
-  font-weight: bold;
-  font-size: 16px;
-  margin: 20px 0 0 10px;
-  padding: 10px;
-  text-align: right;
-  text-decoration: none;
-}
 
-.place-link:hover,
-.place-phone:hover {
-  color: #3594c5;
-}
-
-.fs-link {
-  height: 30px;
-  vertical-align: middle;
-}
 
 .venue-error {
-  color: #f94877;
+  color: #3f3531;
   text-align: center;
 }
 
+/* Responsive Styles */
+ @media screen and (max-width: 600px) {
+  .app-header {
+    font-size: 1.4em;
+    line-height: 1;
+    padding-right: 5px;
+  }
+  .open {
+    flex: 0 0 120px;
+  }
+  .brewery-name {
+    font-size: .9em;
+  }
+  .brewery-city {
+    font-size: .7em;
+  }
+
+  .gm-style-iw {
+    max-width: 120px !important;
+  }
+  .place-photo {
+    display: none;
+  }
+  .place-tip {
+  font-size: .8em;
+  }
+  .place-title,
+  .place-contact,
+  .place-phone,
+  .place-web {
+    margin: 0;
+  }
+  .place-title {
+    font-size: 1em;
+  }
+}
