@@ -50,11 +50,12 @@ header {
 /* Beer List */
 
 .beer-list-container {
+  font-family: 'Catamaran', sans-serif;
   background-color: #a39d9d;
   width: 0px;
   flex: 0 0 0;
   overflow: hidden;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
 }
 .open {
   flex: 0 0 250px;
@@ -69,14 +70,12 @@ header {
 }
 
 .beer-list {
-    font-family: 'Catamaran', sans-serif;
   overflow: scroll;
   height: 100%;
   width: 90%;
   padding: 0;
   margin: auto;
 }
-
 .brewery-list-item {
   text-align: center;
   background-color: #d4dad6;
@@ -111,22 +110,20 @@ padding-top: 0;
   display: flex;
   flex-wrap: nowrap;
 }
-.place a,
-.place-footer a {
-  text-decoration: none;
+.place a {
    color: #281d19; 
 }
-.place a:visited,
-.place-footer a:visited {
+.place a:visited {
   color: #3f531;
 }
 
-.place a:hover,
-.place-footer a:hover, 
+.place a:hover, 
 .place-phone:hover {
   color: #d4dad6;
 }
-
+.place-footer img {
+  width: 200px;
+}
 .place-title,
 .place-contact,
 .place-phone,
@@ -139,6 +136,7 @@ padding-top: 0;
   font-style: italic;
   margin: 0 0 0 10px;
 }
+
 
 .place-phone {
   color: #3f3531;
@@ -163,14 +161,30 @@ padding-top: 0;
   font-style: italic;
 }
 
-
-
 .venue-error {
   color: #3f3531;
   text-align: center;
 }
 
 /* Responsive Styles */
+ @media screen and (min-width: 601px) {
+    .foursquare-small {
+      display: none;
+    }
+    .foursquare-large {
+      width: 90%;
+      margin: 10px auto -5px auto;
+      padding: 15px 0 15px 0;
+      background-color: #fff;
+    }
+  .foursquare-large img {
+    display: flex;
+    width: 90%;
+    margin: auto;
+  }
+
+ }
+
  @media screen and (max-width: 600px) {
   .app-header {
     font-size: 1.4em;
@@ -180,6 +194,31 @@ padding-top: 0;
   .open {
     flex: 0 0 120px;
   }
+  .foursquare-large {
+    display: none;
+    }
+
+  .foursquare-small {
+    font-weight: 300;
+    font-size: .7em;
+    text-align: center;
+    display: block;
+    width: 90%;
+    margin: 10px auto -5px auto;
+    background-color: #fff;
+  }
+  .foursquare-small img {
+    width: 100%;
+    height: auto;
+    margin-bottom: -10px
+  }
+  .foursquare-small p {
+    margin-bottom: -10px;
+  }
+  .foursquare-small a {
+    text-decoration: none;
+  }
+
   .brewery-name {
     font-size: .9em;
   }
@@ -205,4 +244,7 @@ padding-top: 0;
   .place-title {
     font-size: 1em;
   }
+  .place-footer img {
+  width: 100%;
+}
 }

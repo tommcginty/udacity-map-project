@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Brewery from './Brewery.js';
-//import * as BreweryAPI from '../api/BreweryAPI.js';
 import PropTypes from 'prop-types';
 import escapeRegEx from 'escape-string-regexp'
 import sortBy from 'sort-by'
+import powerdByFoursquare from "../images/powered-by-foursquare-blue.png"
+import foursquare from "../images/Foursquare.png"
 import {
   hideMarkers,
   showMarkers,
@@ -13,8 +14,6 @@ class BeerList extends Component {
 	static propTypes = {
 		breweries: PropTypes.array.isRequired,
 		markers: PropTypes.array.isRequired,
-		//hideMarkers: PropTypes.func.isRequired,
-		//showMarkers: PropTypes.func.isRequired,
 	}
 state = {
 	query: '',
@@ -28,20 +27,6 @@ clearQuery = () => {
 	this.setState({query: '' })
 }
 
-openWindow = () => {
-	window.google.maps.event.trigger(this.props.marker, 'click')
-}
-
-
-
-componentDidMount() {
-}
-
-
-componentDidUpdate() {
-	console.log(this.props.menuOpen)
-
-};
 	render () {
 		const { breweries, markers, menuOpen } = this.props
 		const { query } = this.state
@@ -67,6 +52,20 @@ componentDidUpdate() {
 							hideMarkers(markers)
 						}}
 					/>
+				</div>
+				<div>
+					<div className='foursquare-large'>
+						<a href='https://foursquare.com/' target='_blank'rel='noopener noreferrer'>
+							<img src={powerdByFoursquare} alt='Powered by Foursquare' />
+						</a>
+					</div>
+					<div className='foursquare-small'>
+						<a href='https://foursquare.com/' target='_blank' rel='noopener noreferrer'>
+							<p>Powered by</p>
+							<img src={foursquare} alt='Foursquare Logo' />
+						</a>
+					</div>
+
 				</div>
 				<ul className='beer-list'>
 					{filteredList.map((breweries) => (

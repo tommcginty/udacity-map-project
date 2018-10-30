@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../App.css';
-//import * as BreweryAPI from '../api/BreweryAPI.js';
 import PropTypes from 'prop-types';
 
 class Brewery extends Component {
@@ -16,7 +15,6 @@ class Brewery extends Component {
 
 	render () {
 		const { breweries } = this.props
-		//console.log(breweries)
 		return (
 	<li className='brewery-list-item' onClick={() => this.openWindow()}>
 		<h2 className='brewery-name'>{breweries.name}</h2>

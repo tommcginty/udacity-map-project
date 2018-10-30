@@ -1,4 +1,6 @@
 import noImage from "../images/no-image-available.png";
+import powerdByFoursquare from "../images/powered-by-foursquare-blue.png";
+
 
 
   // set up fallbacks in case data is incomplete
@@ -12,11 +14,11 @@ export const checkData = (marker, data) => {
     location,
     url,
     tips
-  } = place; // destructuring
+  } = place; 
 
   marker.canonicalUrl = canonicalUrl ? canonicalUrl : "https://foursquare.com/";
   marker.photo = bestPhoto
-    ? `${bestPhoto.prefix}width100${bestPhoto.suffix}` // ES6 template literals
+    ? `${bestPhoto.prefix}width100${bestPhoto.suffix}`
     : noImage;
   marker.phone =
     contact && contact.formattedPhone ? contact.formattedPhone : "";
@@ -34,6 +36,7 @@ export const checkData = (marker, data) => {
 
 
 export const getInfoContent = marker => {
+  // If foursquare doesn't have a website listed, search Google
   if(!marker.url) {
     marker.url = `https://www.google.co.in/search?q=${marker.title}`;
   }
@@ -45,14 +48,15 @@ export const getInfoContent = marker => {
                         <p class="place-contact">${marker.address}</p>
                         <p class="place-contact">${marker.city}, ${marker.state} ${marker.postalCode}</p>
                         <p class="place-contact">
-                            <a href="${marker.url}"" target="_blank">Website</a>
+                            <a href="${marker.url}"" target="_blank">Visit website</a>
                         </p>
                       </div>
                     </div>
                     <div class="place-footer">
                       <p class="place-tip">Tip: ${marker.tip}</p>
-                      <p class="place-web">See more tips on <a href="${marker.canonicalUrl}"" target="_blank">FourSquare</a></p>
-                      </div>`;
+                      <a href="${marker.canonicalUrl}"" target="_blank" rel='noopener noreferrer'>
+                        <img src=${powerdByFoursquare} /></a>
+                    </div>`;
   return marker;
 };
 
@@ -82,24 +86,6 @@ export const showMarkers = (filteredList, markers) => {
   }
 }
 
-/*
-export const hideMarkers = (markersArray) => {
-  for (let i = 0; i < markersArray.length; i++) {
-    markersArray[i].setVisible(false);
-  }
-}
-export const showMarkers = (filteredList, markers) => {
-  if (markers.length > 0) {
-    for (let i = 0; i < filteredList.length; i++) {
-      for (let j = 0; j < markers.length; j++) {
-        if (markers[j].title === filteredList[i].name) {
-          markers[j].setVisible(true)
-        }
-      }
-    }
-  }
-}
-*/
 
 
 
