@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import * as BreweryAPI from "./api/BreweryAPI.js";
 import BeerList from "./components/BeerList.js";
+import MapError from "./components/MapError.js";
 import {
   checkData,
   getInfoContent,
@@ -118,9 +119,7 @@ class neighborhoodMap extends Component {
           infowindow={infowindow}
         />
         {mapLoaded ? ( <div id="map"></div> ) : (
-        <div className="map-error">
-          <h3>Error loading content, try again later</h3>
-        </div>) /* Error handling if the map doesn't load */}
+        <MapError />) /* Error handling if the map doesn't load */}
         </div>
       </div>
     )

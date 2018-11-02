@@ -68,9 +68,9 @@ class BeerList extends Component {
 
 				</div>
 				<ul className="beer-list">
-				{filteredList !== 0 ? (filteredList.map((breweries) => (
+				{filteredList.length !== 0 ? (filteredList.map((breweries) => (
 						<Brewery key={breweries.id} className="brewery-list-item" breweries={breweries} openWindow={this.openWindow}/>
-					))) : (<li className="brewery-list-item"><p>Sorry, no data avaiable</p></li>)}
+					))) : (<li className="brewery-list-item"><p>Sorry, no results found.</p></li>)}
 				</ul>
 				{showMarkers(filteredList, markers)}
 			</div>

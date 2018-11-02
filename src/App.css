@@ -51,6 +51,13 @@ header {
 
 .map-error {
   font-family: "Catamaran", sans-serif;
+  margin: auto;
+  padding: 10px;
+}
+
+.map-error h3 {
+  font-weight: 500;
+  font-style: italic;
   text-align: center;
 }
 

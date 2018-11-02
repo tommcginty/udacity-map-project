@@ -2,7 +2,7 @@
 
 const fsURL = "https://api.foursquare.com/v2/venues/",
 	  clientID = "OLSC5NDYPPZVPXAS3KM0NTJ5404JN0MICQ4F2YLBF00KYV1H",
-	  clientSecret = "4HUJIISYVN1PZPOBDO1P3FAGEFA5TEK0GGUI02HRAE3U0FZ0",
+	  clientSecret = "4HUJIISYVN1PZPOBDO1P3FAGEFA5TEK0GGUI02HRAE3U0FZ0!!!!",
 	  version = "20181005",
 	  search = "search?ll=39.3643,-74.4229&radius=70000&categoryId=50327c8591d4c4b30a586d5d"
  // Gets all breweies and filter ones that actually have an address and who are actually breweries
