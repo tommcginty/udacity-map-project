@@ -1,12 +1,9 @@
 import noImage from "../images/no-image-available.png";
 import powerdByFoursquare from "../images/powered-by-foursquare-blue.png";
 
-
-
   // set up fallbacks in case data is incomplete
 export const checkData = (marker, data) => {
   const place = data.response.venue;
-
   const {
     canonicalUrl,
     bestPhoto,
@@ -34,9 +31,8 @@ export const checkData = (marker, data) => {
   return marker;
 };
 
-
 export const getInfoContent = marker => {
-  // If foursquare doesn't have a website listed, search Google
+  // If foursquare doesn"t have a website listed, search Google
   if(!marker.url) {
     marker.url = `https://www.google.co.in/search?q=${marker.title}`;
   }
@@ -54,12 +50,12 @@ export const getInfoContent = marker => {
                     </div>
                     <div class="place-footer">
                       <p class="place-tip">Tip: ${marker.tip}</p>
-                      <a href="${marker.canonicalUrl}"" target="_blank" rel='noopener noreferrer'>
-                        <img src=${powerdByFoursquare} /></a>
+                      <a href="${marker.canonicalUrl}"" target="_blank" rel="noopener noreferrer">
+                        <img src=${powerdByFoursquare} alt="Powered by foursquare" /></a>
                     </div>`;
   return marker;
 };
-
+// Error content if data doesn't load in the info window
 export const getErrorContent = marker => {
   marker.infoContent = `<div class="venue-error"  role="alert">
         <h3>Problem displaying details for ${marker.title} </h3>
@@ -85,13 +81,3 @@ export const showMarkers = (filteredList, markers) => {
     })
   }
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import '../App.css';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import "../App.css";
+import PropTypes from "prop-types";
 
 class Brewery extends Component {
 	static propTypes = {
@@ -8,7 +8,7 @@ class Brewery extends Component {
 	}
 
 	openWindow = () => {
-	window.google.maps.event.trigger(this.props.breweries.marker, 'click')
+	window.google.maps.event.trigger(this.props.breweries.marker, "click")
 	}
 
 
@@ -16,9 +16,9 @@ class Brewery extends Component {
 	render () {
 		const { breweries } = this.props
 		return (
-	<li className='brewery-list-item' onClick={() => this.openWindow()}>
-		<h2 className='brewery-name'>{breweries.name}</h2>
-		<p className='brewery-city'>{breweries.location.city}</p>
+	<li tabIndex="0" className="brewery-list-item" onClick={() => this.openWindow()} onKeyPress={() => this.openWindow()}>
+			<h2 className="brewery-name">{breweries.name}</h2>
+			<p className="brewery-city">{breweries.location.city}</p>
 	</li>
 
 	)}

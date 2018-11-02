@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import './App.css';
-import * as BreweryAPI from './api/BreweryAPI.js';
-import BeerList from './components/BeerList.js';
+import React, { Component } from "react";
+import "./App.css";
+import * as BreweryAPI from "./api/BreweryAPI.js";
+import BeerList from "./components/BeerList.js";
 import {
   checkData,
   getInfoContent,
@@ -12,29 +12,30 @@ class neighborhoodMap extends Component {
 
   state = {
     breweries: [],
-    breweries2: [],
     mapNJ: {},
     markers: [],
     infowindow: {},
-    menuOpen: false
+    menuOpen: false,
+    mapLoaded:false
   }
   renderMap = () => {
     loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY&callback=initMap")
     window.initMap = this.initMap
   }
+
   initMap = () => {
-    const map = new window.google.maps.Map(document.getElementById('map'), {
+    const map = new window.google.maps.Map(document.getElementById("map"), {
       center: {lat: 39.514327, lng: -74.663288},
       zoom: 2,
       mapTypeControl: false,
       fullscreenControl: false
     })
     this.setState({mapNJ: map})
-    window.google.maps.event.addListenerOnce(map, 'idle', () => {
+    window.google.maps.event.addListenerOnce(map, "idle", () => {
           this.makeMarkers(this.state.breweries)
     });
   }
-
+  // Loops through each brewery and creates a marker
   makeMarkers = (locations) => {
     const infowindow = new window.google.maps.InfoWindow();
     let markerArray = []
@@ -47,7 +48,7 @@ class neighborhoodMap extends Component {
         animation: window.google.maps.Animation.DROP,
         id: brewery.id
       })
-      marker.addListener('click', function() {
+      marker.addListener("click", function() {
         const marker = this;
         marker.setAnimation(window.google.maps.Animation.BOUNCE);
         setTimeout(() => marker.setAnimation(null), 1400);
@@ -66,6 +67,7 @@ class neighborhoodMap extends Component {
       brewery.marker = marker
       markerArray.push(marker);
     })
+    // Makes the map the size of the marker boundries
     let bounds = new window.google.maps.LatLngBounds()
     markerArray.forEach(marker =>{
       bounds.extend(marker.getPosition());
@@ -74,56 +76,53 @@ class neighborhoodMap extends Component {
     map.fitBounds(bounds)
     this.setState({ markers: markerArray,
                     infowindow: infowindow,
-                    breweries: breweryArray })
+                    breweries: breweryArray,
+                    mapLoaded: true })
   }
 
 
   toggleBeerList = () => {
-    console.log(this.state.menuOpen)
   this.setState({ menuOpen: !this.state.menuOpen})
   }
 
   componentDidMount() {
     BreweryAPI.getAll()
+    .then(this.setState({ mapLoaded: true }))
     .then(response => {
       this.setState({ breweries: response }, this.renderMap());
-    });
+    })
+    .catch((err) => {
+      this.setState({ mapLoaded: false })
+    })
 
   }
 
-  componentDidUpdate() {
-    if (!this.state.breweries) {
-      alert('Error loading breweries, check your network connection')
-    }
-
-      
-}
-
   render() {
-
+    const { mapLoaded, menuOpen, breweries, markers, infowindow } = this.state
     return (
-        <div className='container'>
-              <header>
-        <div id="menu" className="header-menu" onClick={() => this.toggleBeerList()}>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
-                </svg>
-            </div>
-      <h1 className="app-header">South Jersey Craft Beer Directory</h1>
-      </header>
-      <div className='map-container'>
-          <BeerList 
-            menuOpen={this.state.menuOpen}
-            breweries={this.state.breweries} 
-            markers={this.state.markers}
-            hideMarkers={this.hideMarkers}
-            showMarkers={this.showMarkers}
-            infowindow={this.infowindow}
-          />
-            <div id='map'></div>
-          </div>
-        </div>
+      <div className="container" role="main">
+        <header>
+          <nav id="menu" className="header-menu" tabIndex="0" onClick={() => this.toggleBeerList()} onKeyPress={() => this.toggleBeerList()}>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" alt="Menu">
+              <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+            </svg>
+          </nav>
+          <h1 className="app-header">South Jersey Craft Beer Directory</h1>
+        </header>
 
+        <div className="map-container">
+          <BeerList 
+          menuOpen={menuOpen}
+          breweries={breweries} 
+          markers={markers}
+          infowindow={infowindow}
+        />
+        {mapLoaded ? ( <div id="map"></div> ) : (
+        <div className="map-error">
+          <h3>Error loading content, try again later</h3>
+        </div>) /* Error handling if the map doesn't load */}
+        </div>
+      </div>
     )
   }
 }
@@ -136,7 +135,5 @@ function loadScript(url) {
   script.defer = true
   index.parentNode.insertBefore(script, index)
 }
-
-
 
 export default neighborhoodMap;
