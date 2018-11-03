@@ -33,7 +33,15 @@ header {
   align-self: center;
   margin-left: 20px;
 }
+.preloader {
+    z-index: 0;
+    position: absolute;
+    background-color: #f2dbc4;
+    width: 100%;
+    height: 100%;
+    display: inline-flex
 
+}
 /* Map */
 .map-container {
   display: flex;
@@ -92,6 +100,7 @@ header {
   width: 90%;
   padding: 0;
   margin: auto;
+  -webkit-overflow-scrolling: touch
 }
 
 .brewery-list-item {
@@ -105,6 +114,12 @@ header {
   cursor: pointer;
 }
 
+.brewery-list-item:hover,
+.brewery-list-item:focus {
+  background-color: #f2dbc4;
+  outline: 0;
+}
+
 .brewery-name {
   font-weight: 500;
   font-size: 1.2em;
@@ -113,13 +128,15 @@ header {
 }
 
 .brewery-city {
-font-weight: 300;
-font-style: italic;  
-font-size: .8em;
-line-height: 1;
-margin-top: -10px;
-padding-top: 0;
+  font-weight: 300;
+  font-style: italic;  
+  font-size: .8em;
+  line-height: 1;
+  margin-top: -10px;
+  padding-top: 0;
 }
+
+
 
 /* infowindow */
 .gm-style-iw {
@@ -197,10 +214,11 @@ padding-top: 0;
 
   .foursquare-large {
     width: 90%;
-    margin: 10px auto -5px auto;
+    margin: 10px auto 10px auto;
     padding: 15px 0 15px 0;
     background-color: #fff;
   }
+
   .foursquare-large img {
     display: flex;
     width: 90%;

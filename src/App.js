@@ -27,7 +27,7 @@ class neighborhoodMap extends Component {
   initMap = () => {
     const map = new window.google.maps.Map(document.getElementById("map"), {
       center: {lat: 39.514327, lng: -74.663288},
-      zoom: 2,
+      zoom: 13,
       mapTypeControl: false,
       fullscreenControl: false
     })
@@ -81,10 +81,10 @@ class neighborhoodMap extends Component {
                     mapLoaded: true })
   }
 
-
   toggleBeerList = () => {
   this.setState({ menuOpen: !this.state.menuOpen})
   }
+
 
   componentDidMount() {
     BreweryAPI.getAll()
@@ -95,7 +95,6 @@ class neighborhoodMap extends Component {
     .catch((err) => {
       this.setState({ mapLoaded: false })
     })
-
   }
 
   render() {

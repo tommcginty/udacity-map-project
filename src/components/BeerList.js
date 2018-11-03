@@ -24,9 +24,11 @@ class BeerList extends Component {
 	clearQuery = () => {
 		this.setState({query: "" })
 	}
+	componentDidUpdate() {
+	}
 
 	render () {
-		const { breweries, markers, menuOpen } = this.props
+		const { breweries, markers, menuOpen, infowindow } = this.props
 		const { query } = this.state
 		let filteredList = undefined;
 		if (this.state.query) {
@@ -50,6 +52,7 @@ class BeerList extends Component {
 						onChange={event => {
 							this.updateQuery(event.target.value)
 							hideMarkers(markers)
+							infowindow.close()
 						}}
 					/>
 				</div>
