@@ -3,11 +3,7 @@ import "./App.css";
 import * as BreweryAPI from "./api/BreweryAPI.js";
 import BeerList from "./components/BeerList.js";
 import MapError from "./components/MapError.js";
-import {
-  checkData,
-  getInfoContent,
-  getErrorContent
-} from "./util/helpers";  
+import { checkData, getInfoContent, getErrorContent } from "./util/helpers";  
 import { MapKey } from "./credentials/Credentials.js"
 
 class neighborhoodMap extends Component {
