@@ -14,7 +14,7 @@ For this project, I wanted to find a good IPA using an API, so I built this sing
 
 ## Using the South Jersey Craft Beer Directory
 
-This project was built using npm 6.4.1(https://nodejs.org/en/) and yarn 1.9.4(https://yarnpkg.com/en/).
+This project was built using [npm](https://nodejs.org/en/)  6.4.1 and [yarn](https://yarnpkg.com/en/) 1.9.4.
 - Download or clone the repository
 - Navigate to the project directory and install the dependencies using
 ```bash
