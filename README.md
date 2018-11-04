@@ -1,7 +1,6 @@
 # Udacity Neighborhood Map Project
 
-For this project, I wanted to find a good IPA using an API, so I built this single page web app. It created was with React.js, Google Maps FourSquare. View the demo here:
-[sj-craft-beer.surge.sh](#http://sj-craft-beer.surge.sh/)
+For this project, I wanted to find a good IPA using an API, so I built this single page web app. It created was with React.js, Google Maps FourSquare. View the demo here: [sj-craft-beer.surge.sh](http://sj-craft-beer.surge.sh/)
 
 ## Features
 
