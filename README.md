@@ -15,7 +15,8 @@ For this project, I wanted to find a good IPA using an API, so I built this sing
 
 This project was built using [npm](https://nodejs.org/en/)  6.4.1 and [yarn](https://yarnpkg.com/en/) 1.9.4.
 - Download or clone the repository
-- You will need to obtain your own API keys from [Google](https://developers.google.com/maps/documentation/javascript/get-api-key) and [FourSquare](https://developer.foursquare.com/docs/api)
+- You will need to obtain your own API keys from [Google](https://developers.google.com/maps/documentation/javascript/get-api-key) and a Client ID & Secret from [FourSquare](https://developer.foursquare.com/docs/api)
+- Enter your API Key, Client ID, and Client Secret in the credentials.js file.
 - Navigate to the project directory and install the dependencies using
 ```bash
 npm install
