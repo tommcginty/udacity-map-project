@@ -8,6 +8,7 @@ import {
   getInfoContent,
   getErrorContent
 } from "./util/helpers";  
+import { MapKey } from "./credentials/Credentials.js"
 
 class neighborhoodMap extends Component {
 
@@ -20,7 +21,7 @@ class neighborhoodMap extends Component {
     mapLoaded:false
   }
   renderMap = () => {
-    loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyBCaNfq4-xCMmvc-H8GARJxFlEJGJpyqsY&callback=initMap")
+    loadScript(`https://maps.googleapis.com/maps/api/js?key=${MapKey}&callback=initMap`)
     window.initMap = this.initMap
   }
 

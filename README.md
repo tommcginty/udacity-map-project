@@ -29,6 +29,10 @@ Note: This will run the project without the service worker.
 
 ### To run the project in production mode, run:
 ```bash
+yarn build
+```
+then run
+```bash
 serve -s build
 ```
 This will open the project in a new browser tab. If not, enter http://localhost:5000 in your browser's address bar.
