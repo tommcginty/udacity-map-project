@@ -2,6 +2,7 @@
 
 #credentials
 /src/credentials
+.Credentials.js
 
 # dependencies
 /node_modules
