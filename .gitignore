@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 #credentials
-src/credentials
+/src/credentials
 
 # dependencies
 /node_modules
