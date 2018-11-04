@@ -10,12 +10,7 @@ class Brewery extends Component {
 	openWindow = () => {
 	window.google.maps.event.trigger(this.props.breweries.marker, "click")
 	}
-componentDidMount() {
-	if(!this.props.breweries)
-	console.log("check")
-}
-
-
+	
 	render () {
 		const { breweries } = this.props
 		return (

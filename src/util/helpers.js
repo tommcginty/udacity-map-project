@@ -32,7 +32,7 @@ export const checkData = (marker, data) => {
 };
 
 export const getInfoContent = marker => {
-  // If foursquare doesn"t have a website listed, search Google
+  // If foursquare doesn't have a website listed, search Google
   if(!marker.url) {
     marker.url = `https://www.google.co.in/search?q=${marker.title}`;
   }
