@@ -14,7 +14,8 @@ class neighborhoodMap extends Component {
     markers: [],
     infowindow: {},
     menuOpen: false,
-    mapLoaded:false
+    mapLoaded:false,
+    mapError: false
   }
   renderMap = () => {
     loadScript(`https://maps.googleapis.com/maps/api/js?key=${MapKey}&callback=initMap`)
@@ -82,8 +83,16 @@ class neighborhoodMap extends Component {
   this.setState({ menuOpen: !this.state.menuOpen})
   }
 
+  gm_authFailure = () => {
+    // remove the map div or maybe call another API to load map
+   // maybe display a useful message to the user
+   alert('Google maps failed to load!');
+}
 
   componentDidMount() {
+    window.gm_authFailure = () => {
+    this.setState({ mapError: true });
+  }
     BreweryAPI.getAll()
     .then(this.setState({ mapLoaded: true }))
     .then(response => {
@@ -95,7 +104,8 @@ class neighborhoodMap extends Component {
   }
 
   render() {
-    const { mapLoaded, menuOpen, breweries, markers, infowindow } = this.state
+
+    const { mapLoaded, menuOpen, breweries, markers, infowindow, mapError } = this.state
     return (
       <div className="container" role="main">
         <header>
@@ -114,7 +124,7 @@ class neighborhoodMap extends Component {
           markers={markers}
           infowindow={infowindow}
         />
-        {mapLoaded ? ( <div id="map"></div> ) : (
+        {mapLoaded && !mapError ? ( <div id="map"></div> ) : (
         <MapError />) /* Error handling if the map doesn't load */}
         </div>
       </div>
